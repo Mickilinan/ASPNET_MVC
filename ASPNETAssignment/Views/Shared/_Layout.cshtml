@@ -13,7 +13,7 @@
 <body>
 <header>
     <div class="container">
-        <a id="logo" href="home.html"><img src="/images/siliconLogo.svg"></a>
+            <a id="logo" asp-controller="Home" asp-action="Index"><img src="/images/siliconLogo.svg"></a>
         <div id="menu">
             <nav>
                 <a class="menu-link" href="#showcase">Overview</a>
@@ -30,8 +30,8 @@
             <label>Dark</label>
         </div>
         <div class="account-buttons">
-            <a class="btn-gray" href="#"><i class="fa-regular fa-right-to-bracket"></i><span>Sign In</span></a>
-            <a class="btn-theme" href="#"><i class="fa-regular fa-user"></i><span>Sign Up</span></a>
+            <a class="btn-gray" asp-controller="Home" asp-action="SignIn"><i class="fa-regular fa-right-to-bracket"></i><span>Sign In</span></a>
+            <a class="btn-theme" asp-controller="Home" asp-action="CreateAccount"><i class="fa-regular fa-user"></i><span>Sign Up</span></a>
         </div>
 
     </div>

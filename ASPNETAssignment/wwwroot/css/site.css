@@ -439,7 +439,7 @@ footer .container .social-media {
 
 .sign-in {
   position: relative;
-  height: 60vh;
+  height: 70vh;
 }
 .sign-in .content {
   position: absolute;
@@ -501,6 +501,65 @@ footer .container .social-media {
   margin-left: auto;
   text-align: center;
   text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.create-account {
+  position: relative;
+  height: 70vh;
+}
+.create-account .content {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+}
+.create-account .content .name-by-side {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.create-account .content .input-field p {
+  font-weight: 900;
+  margin-bottom: 5px;
+  padding-top: 1rem;
+}
+.create-account .content .input-field input {
+  max-width: 33rem;
+  width: 100%;
+  height: 3rem;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #D4D7E5;
+  padding-left: 20px;
+  font-weight: 500;
+  opacity: 0.7;
+}
+.create-account .content .checkbox input {
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid gray;
+  border-radius: 3px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transform: translateY(10%);
+  opacity: 0.6;
+}
+.create-account .content .checkbox input:checked {
+  background-color: gray;
+}
+.create-account .content .checkbox {
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+.create-account .content .checkbox span {
+  padding-left: 0.5rem;
+}
+.create-account .content .btn-theme {
+  height: 3rem;
+  font-weight: 600;
+  width: 33rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 html, body {
@@ -941,7 +1000,7 @@ footer .container .social-media {
 
 .sign-in {
   position: relative;
-  height: 60vh;
+  height: 70vh;
 }
 .sign-in .content {
   position: absolute;
@@ -1003,6 +1062,65 @@ footer .container .social-media {
   margin-left: auto;
   text-align: center;
   text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.create-account {
+  position: relative;
+  height: 70vh;
+}
+.create-account .content {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+}
+.create-account .content .name-by-side {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.create-account .content .input-field p {
+  font-weight: 900;
+  margin-bottom: 5px;
+  padding-top: 1rem;
+}
+.create-account .content .input-field input {
+  max-width: 33rem;
+  width: 100%;
+  height: 3rem;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #D4D7E5;
+  padding-left: 20px;
+  font-weight: 500;
+  opacity: 0.7;
+}
+.create-account .content .checkbox input {
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid gray;
+  border-radius: 3px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transform: translateY(10%);
+  opacity: 0.6;
+}
+.create-account .content .checkbox input:checked {
+  background-color: gray;
+}
+.create-account .content .checkbox {
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+.create-account .content .checkbox span {
+  padding-left: 0.5rem;
+}
+.create-account .content .btn-theme {
+  height: 3rem;
+  font-weight: 600;
+  width: 33rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 html, body {
@@ -1443,7 +1561,7 @@ footer .container .social-media {
 
 .sign-in {
   position: relative;
-  height: 60vh;
+  height: 70vh;
 }
 .sign-in .content {
   position: absolute;
@@ -1505,4 +1623,63 @@ footer .container .social-media {
   margin-left: auto;
   text-align: center;
   text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.create-account {
+  position: relative;
+  height: 70vh;
+}
+.create-account .content {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+}
+.create-account .content .name-by-side {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.create-account .content .input-field p {
+  font-weight: 900;
+  margin-bottom: 5px;
+  padding-top: 1rem;
+}
+.create-account .content .input-field input {
+  max-width: 33rem;
+  width: 100%;
+  height: 3rem;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #D4D7E5;
+  padding-left: 20px;
+  font-weight: 500;
+  opacity: 0.7;
+}
+.create-account .content .checkbox input {
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid gray;
+  border-radius: 3px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transform: translateY(10%);
+  opacity: 0.6;
+}
+.create-account .content .checkbox input:checked {
+  background-color: gray;
+}
+.create-account .content .checkbox {
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+.create-account .content .checkbox span {
+  padding-left: 0.5rem;
+}
+.create-account .content .btn-theme {
+  height: 3rem;
+  font-weight: 600;
+  width: 33rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
 }

@@ -1,5 +1,5 @@
 ﻿
-.sign-in {
+.create-account {
     position: relative;
     height: 70vh;
 
@@ -8,6 +8,12 @@
         left: 50%;
         top: 20%;
         transform: translateX(-50%);
+
+        .name-by-side {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
 
         .input-field {
             p {
@@ -58,21 +64,7 @@
             height: 3rem;
             font-weight: 600;
             width: 33rem;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);     
-        }
-
-        .forgot {
-            color: $theme;
-            margin-left: auto;
-            padding-top: 1.5rem;
-            text-align: center;
-
-            a {
-                font-weight: 600;
-                margin-left: auto;
-                text-align: center;
-                text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
-            }
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);        
         }
     }
 }
