@@ -568,11 +568,8 @@ footer .container .social-media {
   gap: 20px;
 }
 
-.price-color {
+a .price-color {
   color: #6366F1;
-}
-.price-color a {
-  text-decoration: none;
 }
 
 html, body {
@@ -1142,11 +1139,8 @@ footer .container .social-media {
   gap: 20px;
 }
 
-.price-color {
+a .price-color {
   color: #6366F1;
-}
-.price-color a {
-  text-decoration: none;
 }
 
 html, body {
@@ -1716,9 +1710,6 @@ footer .container .social-media {
   gap: 20px;
 }
 
-.price-color {
+a .price-color {
   color: #6366F1;
-}
-.price-color a {
-  text-decoration: none;
 }
