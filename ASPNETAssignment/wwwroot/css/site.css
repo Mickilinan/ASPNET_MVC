@@ -410,6 +410,10 @@ header .container .account-buttons {
 header .container .btn-mobile {
   grid-area: mobile;
   display: block;
+  text-decoration: none;
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
 }
 @media (min-width: 992px) {
   header .container .btn-mobile {
@@ -998,6 +1002,10 @@ header .container .account-buttons {
 header .container .btn-mobile {
   grid-area: mobile;
   display: block;
+  text-decoration: none;
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
 }
 @media (min-width: 992px) {
   header .container .btn-mobile {
@@ -1586,6 +1594,10 @@ header .container .account-buttons {
 header .container .btn-mobile {
   grid-area: mobile;
   display: block;
+  text-decoration: none;
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
 }
 @media (min-width: 992px) {
   header .container .btn-mobile {
