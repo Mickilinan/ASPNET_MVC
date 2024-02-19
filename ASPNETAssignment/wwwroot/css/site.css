@@ -566,6 +566,33 @@ footer .container .social-media {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
 }
 
+.courses-show {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.author {
+  line-height: 160%;
+  font-weight: 400;
+  color: #565973;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px !important;
+}
+
+a .price-color {
+  color: #6366F1;
+}
+
+.courses-time {
+  line-height: 160%;
+  font-weight: 400;
+  color: #565973;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px !important;
+  color: #9397AD;
+}
+
 html, body {
   line-height: 160%;
   font-weight: 400;
@@ -1131,6 +1158,33 @@ footer .container .social-media {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
 }
 
+.courses-show {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.author {
+  line-height: 160%;
+  font-weight: 400;
+  color: #565973;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px !important;
+}
+
+a .price-color {
+  color: #6366F1;
+}
+
+.courses-time {
+  line-height: 160%;
+  font-weight: 400;
+  color: #565973;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px !important;
+  color: #9397AD;
+}
+
 html, body {
   line-height: 160%;
   font-weight: 400;
@@ -1694,4 +1748,31 @@ footer .container .social-media {
   font-weight: 600;
   width: 33rem;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.courses-show {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.author {
+  line-height: 160%;
+  font-weight: 400;
+  color: #565973;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px !important;
+}
+
+a .price-color {
+  color: #6366F1;
+}
+
+.courses-time {
+  line-height: 160%;
+  font-weight: 400;
+  color: #565973;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px !important;
+  color: #9397AD;
 }

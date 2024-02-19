@@ -1,5 +1,22 @@
+
 .courses-show {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+}
+
+.author {
+    @include text-s;
+}
+
+a .price-color {
+    color: $theme;
+
+    
+}
+
+.courses-time {
+
+    @include text-s;
+    color: $gray-600;
 }
