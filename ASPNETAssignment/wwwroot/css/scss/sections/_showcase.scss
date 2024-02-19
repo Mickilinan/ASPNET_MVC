@@ -1,35 +1,3 @@
 ﻿.showcase {
-    margin-bottom: 80px;
-    position: relative;
 
-    @include lg {
-        display: flex;
-        justify-content: flex-end;
-        margin-bottom: 0px;
-    }
-    img {
-        position: relative;
-        z-index: -1;
-        width: 100%;
-
-        @include lg {
-            width: 45%;
-        }
-    }
-
-    .container {
-        height: 100%;
-
-        @include lg {
-            position: absolute;
-            left: 0;
-            right: 0;
-        }
-
-        .content {
-            margin-top: 0px;
-            width: 100%;
-            text-align: center;
-        }
-    }
 }
