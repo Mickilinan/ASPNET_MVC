@@ -568,8 +568,25 @@ footer .container .social-media {
   gap: 20px;
 }
 
+.author {
+  line-height: 160%;
+  font-weight: 400;
+  color: #565973;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px !important;
+}
+
 a .price-color {
   color: #6366F1;
+}
+
+.courses-time {
+  line-height: 160%;
+  font-weight: 400;
+  color: #565973;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px !important;
+  color: #9397AD;
 }
 
 html, body {
@@ -1139,8 +1156,25 @@ footer .container .social-media {
   gap: 20px;
 }
 
+.author {
+  line-height: 160%;
+  font-weight: 400;
+  color: #565973;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px !important;
+}
+
 a .price-color {
   color: #6366F1;
+}
+
+.courses-time {
+  line-height: 160%;
+  font-weight: 400;
+  color: #565973;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px !important;
+  color: #9397AD;
 }
 
 html, body {
@@ -1710,6 +1744,23 @@ footer .container .social-media {
   gap: 20px;
 }
 
+.author {
+  line-height: 160%;
+  font-weight: 400;
+  color: #565973;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px !important;
+}
+
 a .price-color {
   color: #6366F1;
+}
+
+.courses-time {
+  line-height: 160%;
+  font-weight: 400;
+  color: #565973;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px !important;
+  color: #9397AD;
 }
