@@ -9,15 +9,5 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult SignIn()
-    {
-        return View();
-    }
-
-    public IActionResult CreateAccount()
-    {
-        return View();
-    }
-
 }
 

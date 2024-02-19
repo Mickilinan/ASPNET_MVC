@@ -1,4 +1,8 @@
-﻿
+﻿@{
+	ViewData["Title"] = "Sign in";
+}
+
+
 <!DOCTYPE html>
 <html lang="sv-se">
 <head>
@@ -11,56 +15,32 @@
     <title>@ViewData["Title"] Silicon Supreme</title>
 </head>
 <body>
-    <div class="create-account ">
+    <div class="sign-in ">
         <div class="content">
-
             <div class="title">
-                <h1>Create Account</h1>
+                <h1>Welcome Back</h1>
             </div>
             <div class="little-text">
-                <p>Already have an account? <a href="#">Sign in here.</a></p>
+                <p>Don't have an account yet? <a href="#">Sign up here.</a></p>
             </div>
-
-            <div class="name-by-side">
-                <div class="input-field">
-                    <p>First name</p>
-                    <input type="text"
-                           placeholder="Enter your first name" />
-                </div>
-                <div class="input-field">
-                    <p>Last name</p>
-                    <input type="text"
-                           placeholder="Enter your last name" />
-                </div>
-            </div>
-
             <div class="input-field">
-                <p>Email address</p>
+                <p>Email</p>
                 <input type="text"
                        placeholder="Enter your email address" />
             </div>
-
             <div class="input-field">
                 <p>Password</p>
                 <input type="text"
                        placeholder="******" />
             </div>
-            <div class="input-field">
-                <p>Confirm Password</p>
-                <input type="text"
-                       placeholder="******" />
-            </div>
-
             <div class="checkbox">
-                <input type="checkbox" /> <span>I agree to the <a href="#">Terms & Conditions.</a></span>
+                <input type="checkbox" /> <span>Remember me</span>
             </div>
-
-            <button class="btn-theme" href="#">Sign up</button>
-
+            <button class="btn-theme" href="#">Sign in</button>
+            <div class="forgot">
+                <a href="#">Forgot your password?</a>
+            </div>
         </div>
     </div>
-
 </body>
 </html>
-
-
