@@ -566,16 +566,31 @@ footer .container .social-media {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
 }
 
+.courses-page {
+  padding: 50px 0;
+}
 .courses-page .container {
   display: flex;
+  flex-direction: column;
+}
+.courses-page .container .navigation {
+  padding: 30px 0;
+  margin-left: 15px;
+}
+.courses-page .container .toolbar {
+  display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding-bottom: 35px;
+  align-items: flex-start;
+  margin-left: 15px;
+}
+.courses-page .container .dropdown-search {
+  display: flex;
+  justify-content: flex-end;
 }
 .courses-page .container .dropdown {
   position: relative;
   display: inline-block;
-  margin-right: 30px;
+  margin-right: 25px;
 }
 .courses-page .container .dropbtn {
   border-radius: 6px;
@@ -586,6 +601,7 @@ footer .container .social-media {
   justify-content: center;
   align-items: center;
   gap: 12px;
+  background-color: #f9f9f9;
   width: 240px;
   height: 44px;
   border: 1px solid #D4D7E5;
@@ -654,6 +670,22 @@ footer .container .social-media {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+}
+.courses-page .container .courses-show img {
+  border-radius: 8px;
+}
+.courses-page .container .courses-show .courses p {
+  font-weight: bold;
+}
+.courses-page .container .courses-show .courses .price-red {
+  display: inline-block;
+  margin-right: 10px;
+  color: #EF4444;
+  font-weight: bold;
+}
+.courses-page .container .courses-show .courses .old-price {
+  display: inline-block;
+  color: #9397AD;
 }
 .courses-page .author {
   line-height: 160%;
@@ -1236,16 +1268,31 @@ footer .container .social-media {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
 }
 
+.courses-page {
+  padding: 50px 0;
+}
 .courses-page .container {
   display: flex;
+  flex-direction: column;
+}
+.courses-page .container .navigation {
+  padding: 30px 0;
+  margin-left: 15px;
+}
+.courses-page .container .toolbar {
+  display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding-bottom: 35px;
+  align-items: flex-start;
+  margin-left: 15px;
+}
+.courses-page .container .dropdown-search {
+  display: flex;
+  justify-content: flex-end;
 }
 .courses-page .container .dropdown {
   position: relative;
   display: inline-block;
-  margin-right: 30px;
+  margin-right: 25px;
 }
 .courses-page .container .dropbtn {
   border-radius: 6px;
@@ -1256,6 +1303,7 @@ footer .container .social-media {
   justify-content: center;
   align-items: center;
   gap: 12px;
+  background-color: #f9f9f9;
   width: 240px;
   height: 44px;
   border: 1px solid #D4D7E5;
@@ -1324,6 +1372,22 @@ footer .container .social-media {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+}
+.courses-page .container .courses-show img {
+  border-radius: 8px;
+}
+.courses-page .container .courses-show .courses p {
+  font-weight: bold;
+}
+.courses-page .container .courses-show .courses .price-red {
+  display: inline-block;
+  margin-right: 10px;
+  color: #EF4444;
+  font-weight: bold;
+}
+.courses-page .container .courses-show .courses .old-price {
+  display: inline-block;
+  color: #9397AD;
 }
 .courses-page .author {
   line-height: 160%;
@@ -1906,16 +1970,31 @@ footer .container .social-media {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
 }
 
+.courses-page {
+  padding: 50px 0;
+}
 .courses-page .container {
   display: flex;
+  flex-direction: column;
+}
+.courses-page .container .navigation {
+  padding: 30px 0;
+  margin-left: 15px;
+}
+.courses-page .container .toolbar {
+  display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding-bottom: 35px;
+  align-items: flex-start;
+  margin-left: 15px;
+}
+.courses-page .container .dropdown-search {
+  display: flex;
+  justify-content: flex-end;
 }
 .courses-page .container .dropdown {
   position: relative;
   display: inline-block;
-  margin-right: 30px;
+  margin-right: 25px;
 }
 .courses-page .container .dropbtn {
   border-radius: 6px;
@@ -1926,6 +2005,7 @@ footer .container .social-media {
   justify-content: center;
   align-items: center;
   gap: 12px;
+  background-color: #f9f9f9;
   width: 240px;
   height: 44px;
   border: 1px solid #D4D7E5;
@@ -1994,6 +2074,22 @@ footer .container .social-media {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+}
+.courses-page .container .courses-show img {
+  border-radius: 8px;
+}
+.courses-page .container .courses-show .courses p {
+  font-weight: bold;
+}
+.courses-page .container .courses-show .courses .price-red {
+  display: inline-block;
+  margin-right: 10px;
+  color: #EF4444;
+  font-weight: bold;
+}
+.courses-page .container .courses-show .courses .old-price {
+  display: inline-block;
+  color: #9397AD;
 }
 .courses-page .author {
   line-height: 160%;
