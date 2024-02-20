@@ -189,11 +189,11 @@ a {
   color: #565973;
   font-family: "Manrope", sans-serif;
   color: #6366F1;
-  text-decoration: none;
+  text-decoration: underline;
   transition: all 0.25s ease-in-out;
 }
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .menu-link {
@@ -580,8 +580,8 @@ footer .container .social-media {
   font-size: 14px !important;
 }
 
-a .price-color {
-  color: #6366F1;
+a {
+  text-decoration: none;
 }
 
 .courses-time {
@@ -781,11 +781,11 @@ a {
   color: #565973;
   font-family: "Manrope", sans-serif;
   color: #6366F1;
-  text-decoration: none;
+  text-decoration: underline;
   transition: all 0.25s ease-in-out;
 }
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .menu-link {
@@ -1172,8 +1172,8 @@ footer .container .social-media {
   font-size: 14px !important;
 }
 
-a .price-color {
-  color: #6366F1;
+a {
+  text-decoration: none;
 }
 
 .courses-time {
@@ -1373,11 +1373,11 @@ a {
   color: #565973;
   font-family: "Manrope", sans-serif;
   color: #6366F1;
-  text-decoration: none;
+  text-decoration: underline;
   transition: all 0.25s ease-in-out;
 }
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .menu-link {
@@ -1764,8 +1764,8 @@ footer .container .social-media {
   font-size: 14px !important;
 }
 
-a .price-color {
-  color: #6366F1;
+a {
+  text-decoration: none;
 }
 
 .courses-time {

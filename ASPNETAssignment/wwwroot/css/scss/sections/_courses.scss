@@ -9,8 +9,9 @@
     @include text-s;
 }
 
-a .price-color {
-    color: $theme;
+a {
+   
+    text-decoration: none;
 
     
 }
