@@ -189,7 +189,7 @@ a {
   color: #565973;
   font-family: "Manrope", sans-serif;
   color: #6366F1;
-  text-decoration: underline;
+  text-decoration: none;
   transition: all 0.25s ease-in-out;
 }
 a:hover {
@@ -566,22 +566,103 @@ footer .container .social-media {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
 }
 
-.container .courses-show {
-  padding: 50px;
+.courses-page .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 35px;
+}
+.courses-page .container .dropdown {
+  position: relative;
+  display: inline-block;
+  margin-right: 30px;
+}
+.courses-page .container .dropbtn {
+  border-radius: 6px;
+  text-align: center;
+  font-size: 14px;
+  padding: 8px 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 240px;
+  height: 44px;
+  border: 1px solid #D4D7E5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  box-shadow: 0px 4px 9px -1px rgba(86, 89, 115, 0.3), 0px 4.4px 20px -1px rgba(86, 89, 115, 0.5);
+}
+.courses-page .container .dropbtn i {
+  margin-left: 10px;
+}
+.courses-page .container .dropdown-content {
+  list-style: none;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 0;
+}
+.courses-page .container .dropdown-content li {
+  padding: 10px;
+}
+.courses-page .container .dropdown-content li a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+}
+.courses-page .container .dropdown:hover .dropdown-content {
+  display: block;
+}
+.courses-page .container .search-courses {
+  border-radius: 6px;
+  text-align: center;
+  font-size: 14px;
+  padding: 8px 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 300px;
+  height: 44px;
+  box-shadow: 0px 4px 9px -1px rgba(86, 89, 115, 0.3), 0px 4.4px 20px -1px rgba(86, 89, 115, 0.5);
+  position: relative;
+}
+.courses-page .container .search-courses input {
+  width: 100%;
+  height: 100%;
+  padding-right: 40px;
+  border: none;
+}
+.courses-page .container .search-courses input::placeholder {
+  color: #D4D7E5;
+}
+.courses-page .container .search-courses input i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  font-weight: bold;
+}
+.courses-page .container .courses-show {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
-
-.author {
+.courses-page .author {
   line-height: 160%;
   font-weight: 400;
   color: #565973;
   font-family: "Manrope", sans-serif;
   font-size: 14px !important;
 }
-
-.courses-time {
+.courses-page .courses-time {
   line-height: 160%;
   font-weight: 400;
   color: #565973;
@@ -778,7 +859,7 @@ a {
   color: #565973;
   font-family: "Manrope", sans-serif;
   color: #6366F1;
-  text-decoration: underline;
+  text-decoration: none;
   transition: all 0.25s ease-in-out;
 }
 a:hover {
@@ -1155,22 +1236,103 @@ footer .container .social-media {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
 }
 
-.container .courses-show {
-  padding: 50px;
+.courses-page .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 35px;
+}
+.courses-page .container .dropdown {
+  position: relative;
+  display: inline-block;
+  margin-right: 30px;
+}
+.courses-page .container .dropbtn {
+  border-radius: 6px;
+  text-align: center;
+  font-size: 14px;
+  padding: 8px 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 240px;
+  height: 44px;
+  border: 1px solid #D4D7E5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  box-shadow: 0px 4px 9px -1px rgba(86, 89, 115, 0.3), 0px 4.4px 20px -1px rgba(86, 89, 115, 0.5);
+}
+.courses-page .container .dropbtn i {
+  margin-left: 10px;
+}
+.courses-page .container .dropdown-content {
+  list-style: none;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 0;
+}
+.courses-page .container .dropdown-content li {
+  padding: 10px;
+}
+.courses-page .container .dropdown-content li a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+}
+.courses-page .container .dropdown:hover .dropdown-content {
+  display: block;
+}
+.courses-page .container .search-courses {
+  border-radius: 6px;
+  text-align: center;
+  font-size: 14px;
+  padding: 8px 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 300px;
+  height: 44px;
+  box-shadow: 0px 4px 9px -1px rgba(86, 89, 115, 0.3), 0px 4.4px 20px -1px rgba(86, 89, 115, 0.5);
+  position: relative;
+}
+.courses-page .container .search-courses input {
+  width: 100%;
+  height: 100%;
+  padding-right: 40px;
+  border: none;
+}
+.courses-page .container .search-courses input::placeholder {
+  color: #D4D7E5;
+}
+.courses-page .container .search-courses input i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  font-weight: bold;
+}
+.courses-page .container .courses-show {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
-
-.author {
+.courses-page .author {
   line-height: 160%;
   font-weight: 400;
   color: #565973;
   font-family: "Manrope", sans-serif;
   font-size: 14px !important;
 }
-
-.courses-time {
+.courses-page .courses-time {
   line-height: 160%;
   font-weight: 400;
   color: #565973;
@@ -1367,7 +1529,7 @@ a {
   color: #565973;
   font-family: "Manrope", sans-serif;
   color: #6366F1;
-  text-decoration: underline;
+  text-decoration: none;
   transition: all 0.25s ease-in-out;
 }
 a:hover {
@@ -1744,22 +1906,103 @@ footer .container .social-media {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
 }
 
-.container .courses-show {
-  padding: 50px;
+.courses-page .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 35px;
+}
+.courses-page .container .dropdown {
+  position: relative;
+  display: inline-block;
+  margin-right: 30px;
+}
+.courses-page .container .dropbtn {
+  border-radius: 6px;
+  text-align: center;
+  font-size: 14px;
+  padding: 8px 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 240px;
+  height: 44px;
+  border: 1px solid #D4D7E5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  box-shadow: 0px 4px 9px -1px rgba(86, 89, 115, 0.3), 0px 4.4px 20px -1px rgba(86, 89, 115, 0.5);
+}
+.courses-page .container .dropbtn i {
+  margin-left: 10px;
+}
+.courses-page .container .dropdown-content {
+  list-style: none;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 0;
+}
+.courses-page .container .dropdown-content li {
+  padding: 10px;
+}
+.courses-page .container .dropdown-content li a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+}
+.courses-page .container .dropdown:hover .dropdown-content {
+  display: block;
+}
+.courses-page .container .search-courses {
+  border-radius: 6px;
+  text-align: center;
+  font-size: 14px;
+  padding: 8px 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 300px;
+  height: 44px;
+  box-shadow: 0px 4px 9px -1px rgba(86, 89, 115, 0.3), 0px 4.4px 20px -1px rgba(86, 89, 115, 0.5);
+  position: relative;
+}
+.courses-page .container .search-courses input {
+  width: 100%;
+  height: 100%;
+  padding-right: 40px;
+  border: none;
+}
+.courses-page .container .search-courses input::placeholder {
+  color: #D4D7E5;
+}
+.courses-page .container .search-courses input i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  font-weight: bold;
+}
+.courses-page .container .courses-show {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
-
-.author {
+.courses-page .author {
   line-height: 160%;
   font-weight: 400;
   color: #565973;
   font-family: "Manrope", sans-serif;
   font-size: 14px !important;
 }
-
-.courses-time {
+.courses-page .courses-time {
   line-height: 160%;
   font-weight: 400;
   color: #565973;
