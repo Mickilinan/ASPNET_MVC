@@ -1,20 +1,26 @@
 
-.courses-show {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+
+.courses-page {
+  
 }
+.container {
+
+   
+
+    .courses-show {
+        padding:50px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
+
 
 .author {
     @include text-s;
 }
 
-a {
-   
-    text-decoration: none;
 
-    
-}
 
 .courses-time {
 
