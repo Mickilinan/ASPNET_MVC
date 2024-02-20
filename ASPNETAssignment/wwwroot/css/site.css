@@ -566,6 +566,186 @@ footer .container .social-media {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
 }
 
+.showcase .container {
+  display: flex;
+  align-items: center;
+}
+.showcase .container .content {
+  margin-top: 0px;
+  z-index: 1;
+  width: 90%;
+}
+.showcase .container .content h1 {
+  display: flex;
+  margin-bottom: 50px;
+  height: 30%;
+  line-height: 4.5rem;
+}
+.showcase .container .content p {
+  display: flex;
+  width: 100%;
+}
+.showcase .container .content a {
+  max-width: 60%;
+  margin-bottom: 30%;
+  margin-top: 10%;
+}
+.showcase .container .content .logo-text {
+  display: flex;
+  justify-content: space-between;
+}
+.showcase .container .content .rows {
+  justify-content: space-evenly;
+  align-items: center;
+}
+.showcase .container .content .rows .logo {
+  margin-top: 5%;
+  margin-left: 10px;
+  font-size: 15px;
+}
+.showcase .container .content .rows .logo:hover {
+  font-size: 10px;
+}
+@media lg {
+  .showcase .container .content .rows .logo {
+    font-size: 36px;
+  }
+}
+.showcase .container .calender {
+  z-index: -1;
+  display: contents;
+}
+.showcase .container .calender img {
+  position: relative;
+  left: 27%;
+}
+
+.benefits {
+  background: #F3F6FF;
+  padding: 80px;
+}
+.benefits .container {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.benefits .container .title {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 0px 20% 0 20%;
+  margin-bottom: 5%;
+}
+.benefits .container .title p {
+  padding: 0px 10% 0 10%;
+}
+.benefits .container .grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "app-card1" "app-card2" "app-card3" "app-card4" "app-card5" "app-card6";
+}
+@media (min-width: 768px) {
+  .benefits .container .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "app-card1 app-card2 app-card3" "app-card4 app-card5 app-card6";
+  }
+}
+.benefits .container .grid .app-card1 {
+  padding: 20px;
+  border: 1px solid #E2E5F1;
+  transition: all 0.15s ease-in-out;
+  grid-area: app-card1;
+  height: 250px;
+}
+@media (min-width: 768px) {
+  .benefits .container .grid .app-card1 {
+    border-top: 0px solid #E2E5F1;
+    border-left: 0px solid #E2E5F1;
+  }
+}
+.benefits .container .grid .app-card1:hover {
+  background-color: white;
+}
+.benefits .container .grid .app-card2 {
+  padding: 20px;
+  border: 1px solid #E2E5F1;
+  transition: all 0.15s ease-in-out;
+  grid-area: app-card2;
+  height: 250px;
+}
+@media (min-width: 768px) {
+  .benefits .container .grid .app-card2 {
+    border-top: 0px solid #E2E5F1;
+  }
+}
+.benefits .container .grid .app-card2:hover {
+  background-color: white;
+}
+.benefits .container .grid .app-card3 {
+  padding: 20px;
+  border: 1px solid #E2E5F1;
+  transition: all 0.15s ease-in-out;
+  grid-area: app-card3;
+  height: 250px;
+}
+@media (min-width: 768px) {
+  .benefits .container .grid .app-card3 {
+    border-top: 0px solid #E2E5F1;
+    border-right: 0px solid #E2E5F1;
+  }
+}
+.benefits .container .grid .app-card3:hover {
+  background-color: white;
+}
+.benefits .container .grid .app-card4 {
+  padding: 20px;
+  border: 1px solid #E2E5F1;
+  transition: all 0.15s ease-in-out;
+  grid-area: app-card4;
+  height: 250px;
+}
+@media (min-width: 768px) {
+  .benefits .container .grid .app-card4 {
+    border-bottom: 0px solid #E2E5F1;
+    border-left: 0px solid #E2E5F1;
+  }
+}
+.benefits .container .grid .app-card4:hover {
+  background-color: white;
+}
+.benefits .container .grid .app-card5 {
+  padding: 20px;
+  border: 1px solid #E2E5F1;
+  transition: all 0.15s ease-in-out;
+  grid-area: app-card5;
+  height: 250px;
+}
+@media (min-width: 768px) {
+  .benefits .container .grid .app-card5 {
+    border-bottom: 0px solid #E2E5F1;
+  }
+}
+.benefits .container .grid .app-card5:hover {
+  background-color: white;
+}
+.benefits .container .grid .app-card6 {
+  padding: 20px;
+  border: 1px solid #E2E5F1;
+  transition: all 0.15s ease-in-out;
+  grid-area: app-card6;
+  height: 250px;
+}
+@media (min-width: 992px) {
+  .benefits .container .grid .app-card6 {
+    border-bottom: 0px solid #E2E5F1;
+    border-right: 0px solid #E2E5F1;
+  }
+}
+.benefits .container .grid .app-card6:hover {
+  background-color: white;
+}
+
 .courses-page .container {
   display: flex;
   justify-content: space-between;
@@ -1236,6 +1416,186 @@ footer .container .social-media {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
 }
 
+.showcase .container {
+  display: flex;
+  align-items: center;
+}
+.showcase .container .content {
+  margin-top: 0px;
+  z-index: 1;
+  width: 90%;
+}
+.showcase .container .content h1 {
+  display: flex;
+  margin-bottom: 50px;
+  height: 30%;
+  line-height: 4.5rem;
+}
+.showcase .container .content p {
+  display: flex;
+  width: 100%;
+}
+.showcase .container .content a {
+  max-width: 60%;
+  margin-bottom: 30%;
+  margin-top: 10%;
+}
+.showcase .container .content .logo-text {
+  display: flex;
+  justify-content: space-between;
+}
+.showcase .container .content .rows {
+  justify-content: space-evenly;
+  align-items: center;
+}
+.showcase .container .content .rows .logo {
+  margin-top: 5%;
+  margin-left: 10px;
+  font-size: 15px;
+}
+.showcase .container .content .rows .logo:hover {
+  font-size: 10px;
+}
+@media lg {
+  .showcase .container .content .rows .logo {
+    font-size: 36px;
+  }
+}
+.showcase .container .calender {
+  z-index: -1;
+  display: contents;
+}
+.showcase .container .calender img {
+  position: relative;
+  left: 27%;
+}
+
+.benefits {
+  background: #F3F6FF;
+  padding: 80px;
+}
+.benefits .container {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.benefits .container .title {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 0px 20% 0 20%;
+  margin-bottom: 5%;
+}
+.benefits .container .title p {
+  padding: 0px 10% 0 10%;
+}
+.benefits .container .grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "app-card1" "app-card2" "app-card3" "app-card4" "app-card5" "app-card6";
+}
+@media (min-width: 768px) {
+  .benefits .container .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "app-card1 app-card2 app-card3" "app-card4 app-card5 app-card6";
+  }
+}
+.benefits .container .grid .app-card1 {
+  padding: 20px;
+  border: 1px solid #E2E5F1;
+  transition: all 0.15s ease-in-out;
+  grid-area: app-card1;
+  height: 250px;
+}
+@media (min-width: 768px) {
+  .benefits .container .grid .app-card1 {
+    border-top: 0px solid #E2E5F1;
+    border-left: 0px solid #E2E5F1;
+  }
+}
+.benefits .container .grid .app-card1:hover {
+  background-color: white;
+}
+.benefits .container .grid .app-card2 {
+  padding: 20px;
+  border: 1px solid #E2E5F1;
+  transition: all 0.15s ease-in-out;
+  grid-area: app-card2;
+  height: 250px;
+}
+@media (min-width: 768px) {
+  .benefits .container .grid .app-card2 {
+    border-top: 0px solid #E2E5F1;
+  }
+}
+.benefits .container .grid .app-card2:hover {
+  background-color: white;
+}
+.benefits .container .grid .app-card3 {
+  padding: 20px;
+  border: 1px solid #E2E5F1;
+  transition: all 0.15s ease-in-out;
+  grid-area: app-card3;
+  height: 250px;
+}
+@media (min-width: 768px) {
+  .benefits .container .grid .app-card3 {
+    border-top: 0px solid #E2E5F1;
+    border-right: 0px solid #E2E5F1;
+  }
+}
+.benefits .container .grid .app-card3:hover {
+  background-color: white;
+}
+.benefits .container .grid .app-card4 {
+  padding: 20px;
+  border: 1px solid #E2E5F1;
+  transition: all 0.15s ease-in-out;
+  grid-area: app-card4;
+  height: 250px;
+}
+@media (min-width: 768px) {
+  .benefits .container .grid .app-card4 {
+    border-bottom: 0px solid #E2E5F1;
+    border-left: 0px solid #E2E5F1;
+  }
+}
+.benefits .container .grid .app-card4:hover {
+  background-color: white;
+}
+.benefits .container .grid .app-card5 {
+  padding: 20px;
+  border: 1px solid #E2E5F1;
+  transition: all 0.15s ease-in-out;
+  grid-area: app-card5;
+  height: 250px;
+}
+@media (min-width: 768px) {
+  .benefits .container .grid .app-card5 {
+    border-bottom: 0px solid #E2E5F1;
+  }
+}
+.benefits .container .grid .app-card5:hover {
+  background-color: white;
+}
+.benefits .container .grid .app-card6 {
+  padding: 20px;
+  border: 1px solid #E2E5F1;
+  transition: all 0.15s ease-in-out;
+  grid-area: app-card6;
+  height: 250px;
+}
+@media (min-width: 992px) {
+  .benefits .container .grid .app-card6 {
+    border-bottom: 0px solid #E2E5F1;
+    border-right: 0px solid #E2E5F1;
+  }
+}
+.benefits .container .grid .app-card6:hover {
+  background-color: white;
+}
+
 .courses-page .container {
   display: flex;
   justify-content: space-between;
@@ -1904,6 +2264,186 @@ footer .container .social-media {
   font-weight: 600;
   width: 33rem;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.showcase .container {
+  display: flex;
+  align-items: center;
+}
+.showcase .container .content {
+  margin-top: 0px;
+  z-index: 1;
+  width: 90%;
+}
+.showcase .container .content h1 {
+  display: flex;
+  margin-bottom: 50px;
+  height: 30%;
+  line-height: 4.5rem;
+}
+.showcase .container .content p {
+  display: flex;
+  width: 100%;
+}
+.showcase .container .content a {
+  max-width: 60%;
+  margin-bottom: 30%;
+  margin-top: 10%;
+}
+.showcase .container .content .logo-text {
+  display: flex;
+  justify-content: space-between;
+}
+.showcase .container .content .rows {
+  justify-content: space-evenly;
+  align-items: center;
+}
+.showcase .container .content .rows .logo {
+  margin-top: 5%;
+  margin-left: 10px;
+  font-size: 15px;
+}
+.showcase .container .content .rows .logo:hover {
+  font-size: 10px;
+}
+@media lg {
+  .showcase .container .content .rows .logo {
+    font-size: 36px;
+  }
+}
+.showcase .container .calender {
+  z-index: -1;
+  display: contents;
+}
+.showcase .container .calender img {
+  position: relative;
+  left: 27%;
+}
+
+.benefits {
+  background: #F3F6FF;
+  padding: 80px;
+}
+.benefits .container {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.benefits .container .title {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 0px 20% 0 20%;
+  margin-bottom: 5%;
+}
+.benefits .container .title p {
+  padding: 0px 10% 0 10%;
+}
+.benefits .container .grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "app-card1" "app-card2" "app-card3" "app-card4" "app-card5" "app-card6";
+}
+@media (min-width: 768px) {
+  .benefits .container .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "app-card1 app-card2 app-card3" "app-card4 app-card5 app-card6";
+  }
+}
+.benefits .container .grid .app-card1 {
+  padding: 20px;
+  border: 1px solid #E2E5F1;
+  transition: all 0.15s ease-in-out;
+  grid-area: app-card1;
+  height: 250px;
+}
+@media (min-width: 768px) {
+  .benefits .container .grid .app-card1 {
+    border-top: 0px solid #E2E5F1;
+    border-left: 0px solid #E2E5F1;
+  }
+}
+.benefits .container .grid .app-card1:hover {
+  background-color: white;
+}
+.benefits .container .grid .app-card2 {
+  padding: 20px;
+  border: 1px solid #E2E5F1;
+  transition: all 0.15s ease-in-out;
+  grid-area: app-card2;
+  height: 250px;
+}
+@media (min-width: 768px) {
+  .benefits .container .grid .app-card2 {
+    border-top: 0px solid #E2E5F1;
+  }
+}
+.benefits .container .grid .app-card2:hover {
+  background-color: white;
+}
+.benefits .container .grid .app-card3 {
+  padding: 20px;
+  border: 1px solid #E2E5F1;
+  transition: all 0.15s ease-in-out;
+  grid-area: app-card3;
+  height: 250px;
+}
+@media (min-width: 768px) {
+  .benefits .container .grid .app-card3 {
+    border-top: 0px solid #E2E5F1;
+    border-right: 0px solid #E2E5F1;
+  }
+}
+.benefits .container .grid .app-card3:hover {
+  background-color: white;
+}
+.benefits .container .grid .app-card4 {
+  padding: 20px;
+  border: 1px solid #E2E5F1;
+  transition: all 0.15s ease-in-out;
+  grid-area: app-card4;
+  height: 250px;
+}
+@media (min-width: 768px) {
+  .benefits .container .grid .app-card4 {
+    border-bottom: 0px solid #E2E5F1;
+    border-left: 0px solid #E2E5F1;
+  }
+}
+.benefits .container .grid .app-card4:hover {
+  background-color: white;
+}
+.benefits .container .grid .app-card5 {
+  padding: 20px;
+  border: 1px solid #E2E5F1;
+  transition: all 0.15s ease-in-out;
+  grid-area: app-card5;
+  height: 250px;
+}
+@media (min-width: 768px) {
+  .benefits .container .grid .app-card5 {
+    border-bottom: 0px solid #E2E5F1;
+  }
+}
+.benefits .container .grid .app-card5:hover {
+  background-color: white;
+}
+.benefits .container .grid .app-card6 {
+  padding: 20px;
+  border: 1px solid #E2E5F1;
+  transition: all 0.15s ease-in-out;
+  grid-area: app-card6;
+  height: 250px;
+}
+@media (min-width: 992px) {
+  .benefits .container .grid .app-card6 {
+    border-bottom: 0px solid #E2E5F1;
+    border-right: 0px solid #E2E5F1;
+  }
+}
+.benefits .container .grid .app-card6:hover {
+  background-color: white;
 }
 
 .courses-page .container {
