@@ -6,6 +6,7 @@
         flex-direction: column;
 
         .navigation {
+            color: $gray-600;
             padding: 30px 0;
             /*margin-left: 15px;*/
         }
@@ -115,19 +116,30 @@
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
 
-           
+
 
             .courses {
 
                 @include shadow-s;
                 border-radius: 8px;
+                
 
                 img {
-                    border-radius: 8px 8px 0 0 ;
+                    border-radius: 8px 8px 0 0;
                 }
 
                 p {
                     font-weight: bold;
+                }
+
+
+                h5, p {
+                    margin: 20px;
+                }
+
+                hr {
+                    border-color: $gray-300;
+                    margin: 20px;
                 }
 
                 .price-red {
