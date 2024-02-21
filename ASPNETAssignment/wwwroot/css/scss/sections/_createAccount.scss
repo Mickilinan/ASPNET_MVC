@@ -1,4 +1,5 @@
-﻿.create-account {
+﻿
+.create-account {
     position: relative;
     height: 70vh;
 
@@ -7,6 +8,34 @@
         left: 50%;
         top: 20%;
         transform: translateX(-50%);
+/*
+        #form-firstname {
+            grid-area: firstname;
+        }
+
+        #form-lastname {
+            grid-area: lastname;
+        }
+
+        #form-email {
+            grid-area: email;
+        }
+
+        #form-password {
+            grid-area: password;
+        }
+
+        #form-comfirm {
+            grid-area: confirm;
+        }
+
+        #form-terms {
+            grid-area: terms;
+        }
+
+        #form-button {
+            grid-area: button;
+        }*/
 
         .name-by-side {
             display: grid;
@@ -72,9 +101,9 @@
             }
 
             span.error-message {
-                position: absolute;             
+                position: absolute;
                 right: 0;
-                color: red;
+                color: $danger;
                 font-size: 0.8rem;
                 padding-top: 1rem;
                 transform: translateY(-40%);
@@ -89,3 +118,147 @@
         }
     }
 }
+
+/*.create-account {
+    height: 100%;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        @include lg {
+            width: 60%;
+        }
+
+        @include xl {
+            width: 40%;
+        }
+
+        form {
+            padding: 1rem;
+
+            .content {
+                display: grid;
+                gap: 1rem 2rem;
+                grid-template-columns: 1fr;
+                grid-template-areas: "firstname"
+                                    "lastname" 
+                                    "email" 
+                                    "password" 
+                                    "comfirm" 
+                                    "terms" 
+                                    "button";
+
+                @include md {
+                    grid-auto-columns: 1fr 1fr;
+                    grid-template-areas: "firstname lastname" "email email" "password password" "comfirm comfirm" "terms terms" "button button";
+                }
+
+
+
+                #form-firstname {
+                    grid-area: firstname;
+                }
+
+                #form-lastname {
+                    grid-area: lastname;
+                }
+
+                #form-email {
+                    grid-area: email;
+                }
+
+                #form-password {
+                    grid-area: password;
+                }
+
+                #form-comfirm {
+                    grid-area: confirm;
+                }
+
+                #form-terms {
+                    grid-area: terms;
+                }
+
+                #form-button {
+                    grid-area: button;
+                }
+            }
+        }
+*/
+/*.input-field {
+            display: grid;
+            grid-template-columns: 1fr;
+            position: relative;
+
+            label {
+                font-weight: 900;
+                margin-bottom: 5px;
+                padding-top: 1rem;
+            }
+
+            input {
+                max-width: 33rem;
+                width: 100%;
+                height: 3rem;
+                border-radius: 10px;
+                border: 1px solid;
+                border-color: $gray-400;
+                padding-left: 20px;
+                font-weight: 500;
+                opacity: 0.7;
+            }
+
+            span.error-message {
+                position: absolute;
+                top: 0;
+                right: 0;
+                color: red;
+                font-size: 0.8rem;
+                padding-top: 1rem;
+            }
+        }
+
+        .checkbox input {
+            width: 1rem;
+            height: 1rem;
+            border: 2px solid gray;
+            border-radius: 3px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            transform: translateY(10%);
+            opacity: 0.6;
+
+            &:checked {
+                background-color: gray;
+            }
+        }
+
+        .checkbox {
+            padding-top: 1.2rem;
+            padding-bottom: 1.2rem;
+
+            span {
+                padding-left: 0.5rem;
+            }
+
+            span.error-message {
+                position: absolute;
+                right: 0;
+                color: red;
+                font-size: 0.8rem;
+                padding-top: 1rem;
+                transform: translateY(-40%);
+            }
+        }
+
+        .btn-theme-s {
+            height: 3rem;
+            font-weight: 600;
+            width: 33rem;
+            border: none;
+        }
+    }*/
