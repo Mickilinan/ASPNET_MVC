@@ -79,17 +79,16 @@
         display: flex;
         z-index: 0;
 
-        .dark, .light {
-            height: 100%;
-            width: 50%;
-        }
-
         .dark {
             background-color: $gray-900;
+            width: 50%;
+            height: 100%;
         }
 
         .light {
             background-color: white;
+            width: 50%;
+            height: 100%;
         }
     }
 
