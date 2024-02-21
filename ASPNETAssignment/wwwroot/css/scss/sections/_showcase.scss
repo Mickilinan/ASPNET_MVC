@@ -1,18 +1,23 @@
-﻿.showcase {
+﻿@import '../core/_media.scss';
+@import '../core/_colors.scss';
+
+
+.showcase {
     .container {
         display: flex;
-        align-items: center;
+        padding-bottom: 3rem;
 
         .content {
-            margin-top: 0px;
-            z-index: 1;
-            width: 90%;
+            flex: 1;
+            max-width: 85%;
 
-            h1 {
+            .title {
                 display: flex;
                 margin-bottom: 50px;
+                margin-top: 40px;
                 height: 30%;
                 line-height: 4.5rem;
+                width: 50%;
             }
 
             p {
@@ -22,7 +27,7 @@
 
             a {
                 max-width: 60%;
-                margin-bottom: 30%;
+                margin-bottom: 10%;
                 margin-top: 10%;
             }
 
@@ -39,26 +44,26 @@
                 .logo {
                     margin-top: 5%;
                     margin-left: 10px;
-                    font-size: 15px;
+                    padding: 10px;
+                    justify-content: center;
 
                     &:hover {
-                        font-size: 10px;
-                    }
-
-                    @media lg {
-                        font-size: 36px;
+                        background-color: $gray-200;
+                        border-radius: 5%;
                     }
                 }
             }
         }
 
         .calender {
-            z-index: -1;
-            display: contents;
+            flex: 1;
+            display: none;
+            position: relative;
+            margin: 0px;
+            max-width: 50%;
 
-            img {
-                position: relative;
-                left: 27%
+            @include md {
+                display: inline-block;
             }
         }
     }
