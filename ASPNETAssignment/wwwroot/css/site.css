@@ -522,7 +522,12 @@ footer .container .social-media {
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
-.create-account .content .input-field p {
+.create-account .content .input-field {
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+}
+.create-account .content .input-field label {
   font-weight: 900;
   margin-bottom: 5px;
   padding-top: 1rem;
@@ -537,6 +542,14 @@ footer .container .social-media {
   padding-left: 20px;
   font-weight: 500;
   opacity: 0.7;
+}
+.create-account .content .input-field span.error-message {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: red;
+  font-size: 0.8rem;
+  padding-top: 1rem;
 }
 .create-account .content .checkbox input {
   width: 1rem;
@@ -559,11 +572,19 @@ footer .container .social-media {
 .create-account .content .checkbox span {
   padding-left: 0.5rem;
 }
-.create-account .content .btn-theme {
+.create-account .content .checkbox span.error-message {
+  position: absolute;
+  right: 0;
+  color: #EF4444;
+  font-size: 0.8rem;
+  padding-top: 1rem;
+  transform: translateY(-40%);
+}
+.create-account .content .btn-theme-s {
   height: 3rem;
   font-weight: 600;
   width: 33rem;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+  border: none;
 }
 
 .showcase .container {
@@ -1888,7 +1909,12 @@ footer .container .social-media {
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
-.create-account .content .input-field p {
+.create-account .content .input-field {
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+}
+.create-account .content .input-field label {
   font-weight: 900;
   margin-bottom: 5px;
   padding-top: 1rem;
@@ -1903,6 +1929,14 @@ footer .container .social-media {
   padding-left: 20px;
   font-weight: 500;
   opacity: 0.7;
+}
+.create-account .content .input-field span.error-message {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: red;
+  font-size: 0.8rem;
+  padding-top: 1rem;
 }
 .create-account .content .checkbox input {
   width: 1rem;
@@ -1925,11 +1959,19 @@ footer .container .social-media {
 .create-account .content .checkbox span {
   padding-left: 0.5rem;
 }
-.create-account .content .btn-theme {
+.create-account .content .checkbox span.error-message {
+  position: absolute;
+  right: 0;
+  color: #EF4444;
+  font-size: 0.8rem;
+  padding-top: 1rem;
+  transform: translateY(-40%);
+}
+.create-account .content .btn-theme-s {
   height: 3rem;
   font-weight: 600;
   width: 33rem;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+  border: none;
 }
 
 .showcase .container {
@@ -3254,7 +3296,12 @@ footer .container .social-media {
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
-.create-account .content .input-field p {
+.create-account .content .input-field {
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+}
+.create-account .content .input-field label {
   font-weight: 900;
   margin-bottom: 5px;
   padding-top: 1rem;
@@ -3269,6 +3316,14 @@ footer .container .social-media {
   padding-left: 20px;
   font-weight: 500;
   opacity: 0.7;
+}
+.create-account .content .input-field span.error-message {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: red;
+  font-size: 0.8rem;
+  padding-top: 1rem;
 }
 .create-account .content .checkbox input {
   width: 1rem;
@@ -3291,11 +3346,19 @@ footer .container .social-media {
 .create-account .content .checkbox span {
   padding-left: 0.5rem;
 }
-.create-account .content .btn-theme {
+.create-account .content .checkbox span.error-message {
+  position: absolute;
+  right: 0;
+  color: #EF4444;
+  font-size: 0.8rem;
+  padding-top: 1rem;
+  transform: translateY(-40%);
+}
+.create-account .content .btn-theme-s {
   height: 3rem;
   font-weight: 600;
   width: 33rem;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+  border: none;
 }
 
 .showcase .container {
