@@ -852,8 +852,12 @@ footer .container .social-media {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
-.courses-page .container .courses-show img {
+.courses-page .container .courses-show .courses {
+  box-shadow: 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03), 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06);
   border-radius: 8px;
+}
+.courses-page .container .courses-show .courses img {
+  border-radius: 8px 8px 0 0;
 }
 .courses-page .container .courses-show .courses p {
   font-weight: bold;
@@ -1735,8 +1739,12 @@ footer .container .social-media {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
-.courses-page .container .courses-show img {
+.courses-page .container .courses-show .courses {
+  box-shadow: 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03), 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06);
   border-radius: 8px;
+}
+.courses-page .container .courses-show .courses img {
+  border-radius: 8px 8px 0 0;
 }
 .courses-page .container .courses-show .courses p {
   font-weight: bold;
@@ -2618,8 +2626,12 @@ footer .container .social-media {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
-.courses-page .container .courses-show img {
+.courses-page .container .courses-show .courses {
+  box-shadow: 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03), 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06);
   border-radius: 8px;
+}
+.courses-page .container .courses-show .courses img {
+  border-radius: 8px 8px 0 0;
 }
 .courses-page .container .courses-show .courses p {
   font-weight: bold;
