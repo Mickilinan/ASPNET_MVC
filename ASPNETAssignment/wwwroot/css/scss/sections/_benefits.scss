@@ -1,18 +1,31 @@
 ﻿.benefits {
     background: $gray-100;
-    padding: 80px;
+    padding: 10px;
+    margin-bottom: 0;
+
+    @include md {
+        padding: 80px;
+    }
 
     .container {
         justify-content: center;
         text-align: center;
         align-items: center;
 
-        .title {
+        .text {
             justify-content: center;
             text-align: center;
             align-items: center;
-            padding: 0px 20% 0 20%;
+            padding: 0;
             margin-bottom: 5%;
+
+            @include md {
+                padding: 0px 20% 0 20%;
+            }
+
+            .title {
+                width: 100%;
+            }
 
             p {
                 padding: 0px 10% 0 10%;
