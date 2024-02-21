@@ -122,51 +122,66 @@
 
                 @include shadow-s;
                 border-radius: 8px;
-                
+                display: grid;
+                grid-template-rows: auto 1fr auto;
+                row-gap: 5px;
+
+
 
                 img {
                     border-radius: 8px 8px 0 0;
+                    margin-bottom: 10px;
                 }
 
-                p {
+                .price {
                     font-weight: bold;
+                    margin-left: 20px;
+                   
                 }
 
 
-                h5, p {
-                    margin: 20px;
+                h5 {
+                    margin: 0;
+                    padding: 0 20px 0 20px;
                 }
 
                 hr {
                     border-color: $gray-300;
-                    margin: 20px;
+                    margin: 10px 20px 0 10px;
                 }
 
-                .price-red {
-                    display: inline-block;
-                    margin-right: 10px;
+                .price-container {
+                    display: flex; 
+                    align-items: center; 
+                    margin-left: 20px;
+                }
+
+                .price-red {                  
                     color: $danger;
                     font-weight: bold;
+                    margin-right: 10px;
                 }
 
-                .old-price {
-                    display: inline-block;
+                .old-price {                   
+                   color: $gray-600;
+                   margin-left: 0;
+                   font-weight: normal;
+                }
+
+                .author {
+                    @include text-s;
+                    margin-left: 20px;
+                }
+
+
+
+                .courses-time {
+
+                    @include text-s;
                     color: $gray-600;
+                    margin: 15px 0 20px 20px;
                 }
             }
         }
-    }
-
-
-    .author {
-        @include text-s;
-    }
-
-
-
-    .courses-time {
-
-        @include text-s;
-        color: $gray-600;
     }
 }
