@@ -1344,13 +1344,28 @@ footer .container .social-media {
 .courses-page .container .toolbar .navigation {
   padding: 30px 0;
 }
-.courses-page .container .toolbar .navigation .menu-link {
+.courses-page .container .toolbar .navigation .menu-links {
   line-height: 160%;
   font-weight: 400;
   color: #565973;
   font-family: "Manrope", sans-serif;
   font-size: 14px !important;
   color: #9397AD;
+  text-decoration: none;
+  transition: color 0.25s ease-in-out;
+}
+.courses-page .container .toolbar .navigation .menu-links:hover, .courses-page .container .toolbar .navigation .menu-links:active, .courses-page .container .toolbar .navigation .menu-links:focus,
+.courses-page .container .toolbar .navigation .menu-links .active {
+  color: #6366F1;
+  text-decoration: none;
+}
+.courses-page .container .toolbar .navigation .menu-links i {
+  margin-right: 5px;
+}
+.courses-page .container .toolbar .navigation .menu-links i.fa-sharp.fa-solid.fa-angles-right {
+  font-size: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .courses-page .container .toolbar h1 {
   margin-bottom: 35px;
@@ -1535,6 +1550,12 @@ footer .container .social-media {
 }
 .courses-page .container .courses-show .courses .courses-time i.fa-light.fa-thumbs-up {
   margin-left: 20px;
+}
+.courses-page .container .carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 45px 0 0 0;
 }
 .courses-page .banner {
   padding: 50px 0;
@@ -2922,13 +2943,28 @@ footer .container .social-media {
 .courses-page .container .toolbar .navigation {
   padding: 30px 0;
 }
-.courses-page .container .toolbar .navigation .menu-link {
+.courses-page .container .toolbar .navigation .menu-links {
   line-height: 160%;
   font-weight: 400;
   color: #565973;
   font-family: "Manrope", sans-serif;
   font-size: 14px !important;
   color: #9397AD;
+  text-decoration: none;
+  transition: color 0.25s ease-in-out;
+}
+.courses-page .container .toolbar .navigation .menu-links:hover, .courses-page .container .toolbar .navigation .menu-links:active, .courses-page .container .toolbar .navigation .menu-links:focus,
+.courses-page .container .toolbar .navigation .menu-links .active {
+  color: #6366F1;
+  text-decoration: none;
+}
+.courses-page .container .toolbar .navigation .menu-links i {
+  margin-right: 5px;
+}
+.courses-page .container .toolbar .navigation .menu-links i.fa-sharp.fa-solid.fa-angles-right {
+  font-size: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .courses-page .container .toolbar h1 {
   margin-bottom: 35px;
@@ -3113,6 +3149,12 @@ footer .container .social-media {
 }
 .courses-page .container .courses-show .courses .courses-time i.fa-light.fa-thumbs-up {
   margin-left: 20px;
+}
+.courses-page .container .carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 45px 0 0 0;
 }
 .courses-page .banner {
   padding: 50px 0;
@@ -4500,13 +4542,28 @@ footer .container .social-media {
 .courses-page .container .toolbar .navigation {
   padding: 30px 0;
 }
-.courses-page .container .toolbar .navigation .menu-link {
+.courses-page .container .toolbar .navigation .menu-links {
   line-height: 160%;
   font-weight: 400;
   color: #565973;
   font-family: "Manrope", sans-serif;
   font-size: 14px !important;
   color: #9397AD;
+  text-decoration: none;
+  transition: color 0.25s ease-in-out;
+}
+.courses-page .container .toolbar .navigation .menu-links:hover, .courses-page .container .toolbar .navigation .menu-links:active, .courses-page .container .toolbar .navigation .menu-links:focus,
+.courses-page .container .toolbar .navigation .menu-links .active {
+  color: #6366F1;
+  text-decoration: none;
+}
+.courses-page .container .toolbar .navigation .menu-links i {
+  margin-right: 5px;
+}
+.courses-page .container .toolbar .navigation .menu-links i.fa-sharp.fa-solid.fa-angles-right {
+  font-size: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .courses-page .container .toolbar h1 {
   margin-bottom: 35px;
@@ -4691,6 +4748,12 @@ footer .container .social-media {
 }
 .courses-page .container .courses-show .courses .courses-time i.fa-light.fa-thumbs-up {
   margin-left: 20px;
+}
+.courses-page .container .carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 45px 0 0 0;
 }
 .courses-page .banner {
   padding: 50px 0;
