@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using ASPNETAssignment.Helpers;
+using System.ComponentModel.DataAnnotations;
 
 namespace ASPNETAssignment.Models;
 
@@ -36,6 +37,8 @@ public class SignUpModel
 
     [Display(Name = "I agree to the terms and conditions", Order = 5)]
     [Required(ErrorMessage = "Agree god dammit")]
+    [CheckboxRequired(ErrorMessage = "You must accept to proceed")]
     public bool TermsAndConditions { get; set; } = false;
 
 }
+
