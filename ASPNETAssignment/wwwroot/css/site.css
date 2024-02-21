@@ -746,6 +746,9 @@ footer .container .social-media {
   background-color: white;
 }
 
+.courses-page {
+  padding: 50px 0;
+}
 .courses-page .container {
   display: flex;
   flex-direction: column;
@@ -759,6 +762,7 @@ footer .container .social-media {
   justify-content: space-between;
   align-items: flex-start;
   margin-left: 15px;
+  flex-wrap: wrap;
 }
 .courses-page .container .dropdown-search {
   display: flex;
@@ -1641,6 +1645,7 @@ footer .container .social-media {
   justify-content: space-between;
   align-items: flex-start;
   margin-left: 15px;
+  flex-wrap: wrap;
 }
 .courses-page .container .dropdown-search {
   display: flex;
@@ -2507,6 +2512,9 @@ footer .container .social-media {
   background-color: white;
 }
 
+.courses-page {
+  padding: 50px 0;
+}
 .courses-page .container {
   display: flex;
   flex-direction: column;
@@ -2520,6 +2528,7 @@ footer .container .social-media {
   justify-content: space-between;
   align-items: flex-start;
   margin-left: 15px;
+  flex-wrap: wrap;
 }
 .courses-page .container .dropdown-search {
   display: flex;
