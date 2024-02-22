@@ -1,6 +1,6 @@
-﻿@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
 html, body {
   line-height: 160%;
   font-weight: 400;
@@ -451,12 +451,18 @@ footer .container .social-media {
   top: 20%;
   transform: translateX(-50%);
 }
-.sign-in .content .input-field p {
+.sign-in .content .input-field {
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+}
+.sign-in .content .input-field label {
   font-weight: 900;
   margin-bottom: 5px;
   padding-top: 1rem;
 }
 .sign-in .content .input-field input {
+  border: 2px solid red;
   max-width: 33rem;
   width: 100%;
   height: 3rem;
@@ -466,6 +472,14 @@ footer .container .social-media {
   padding-left: 20px;
   font-weight: 500;
   opacity: 0.7;
+}
+.sign-in .content .input-field span.error-message {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: red;
+  font-size: 0.8rem;
+  padding-top: 1rem;
 }
 .sign-in .content .checkbox input {
   width: 1rem;
@@ -488,11 +502,11 @@ footer .container .social-media {
 .sign-in .content .checkbox span {
   padding-left: 0.5rem;
 }
-.sign-in .content .btn-theme {
+.sign-in .content .btn-theme-s {
   height: 3rem;
   font-weight: 600;
   width: 33rem;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+  border: none;
 }
 .sign-in .content .forgot {
   color: #6366F1;
@@ -785,8 +799,7 @@ footer .container .social-media {
 
 .light-dark {
   height: 300px;
-<<<<<<< HEAD
-=======
+
   padding-top: 0;
   margin-top: 0;
   position: relative;
@@ -1025,7 +1038,7 @@ footer .container .social-media {
   line-height: 14px;
 }
 .apps .container .content .download-type img {
->>>>>>> 322bc2a489dc9531e24e0e093150e748fb5c567e
+ 322bc2a489dc9531e24e0e093150e748fb5c567e
   padding-top: 0;
   margin-top: 0;
   position: relative;
@@ -1095,7 +1108,7 @@ footer .container .social-media {
     font-size: 3em;
   }
 }
-<<<<<<< HEAD
+
 @media (min-width: 1200px) {
   .light-dark .text .l-d {
     padding-left: 20px;
@@ -1103,7 +1116,7 @@ footer .container .social-media {
   }
 }
 .light-dark .light-dark {
-=======
+
 .courses-page .container .toolbar {
   display: flex;
   justify-content: space-between;
@@ -1181,6 +1194,48 @@ footer .container .social-media {
   z-index: 1;
   padding: 0;
 }
+
+.sign-in .content .input-field {
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+}
+.sign-in .content .input-field label {
+  font-weight: 900;
+  margin-bottom: 5px;
+  padding-top: 1rem;
+}
+.sign-in .content .input-field input {
+  border: 2px solid red;
+  max-width: 33rem;
+  width: 100%;
+  height: 3rem;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #D4D7E5;
+  padding-left: 20px;
+  font-weight: 500;
+  opacity: 0.7;
+}
+.sign-in .content .input-field span.error-message {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: red;
+  font-size: 0.8rem;
+  padding-top: 1rem;
+}
+.sign-in .content .checkbox input {
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid gray;
+  border-radius: 3px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transform: translateY(10%);
+  opacity: 0.6;
+=======
 .courses-page .container .dropdown-content li {
   padding: 10px;
 }
@@ -1191,6 +1246,7 @@ footer .container .social-media {
 }
 .courses-page .container .dropdown:hover .dropdown-content {
   display: block;
+
 }
 .courses-page .container .search-courses {
   border-radius: 6px;
@@ -1207,7 +1263,7 @@ footer .container .social-media {
   position: relative;
 }
 .courses-page .container .search-courses input {
->>>>>>> 322bc2a489dc9531e24e0e093150e748fb5c567e
+ 322bc2a489dc9531e24e0e093150e748fb5c567e
   width: 100%;
   height: 100%;
   display: flex;
@@ -1218,10 +1274,18 @@ footer .container .social-media {
   width: 50%;
   height: 100%;
 }
+
+.sign-in .content .btn-theme-s {
+  height: 3rem;
+  font-weight: 600;
+  width: 33rem;
+  border: none;
+
 .light-dark .light-dark .light {
   background-color: white;
   width: 50%;
   height: 100%;
+
 }
 .light-dark .image {
   position: absolute;
@@ -1238,14 +1302,14 @@ footer .container .social-media {
   height: auto;
   object-fit: cover;
 }
-<<<<<<< HEAD
+
 .light-dark .changer {
   position: absolute;
   width: 3px;
   height: 100%;
   top: 0;
   left: 50%;
-=======
+
 .courses-page .container .courses-show .courses {
   box-shadow: 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03), 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06);
   position: relative;
@@ -1685,7 +1749,7 @@ a:hover {
   height: 0;
 }
 .btn-switch .switch input:checked + .slider {
->>>>>>> 322bc2a489dc9531e24e0e093150e748fb5c567e
+ 322bc2a489dc9531e24e0e093150e748fb5c567e
   background-color: #6366F1;
   transform: translateX(-50%);
   z-index: 3;
@@ -1725,8 +1789,8 @@ a:hover {
   }
 }
 
-<<<<<<< HEAD
-=======
+
+
 .benefits {
   background: #F3F6FF;
   padding: 10px;
@@ -1986,6 +2050,48 @@ a:hover {
   z-index: 3;
   padding-top: 10rem;
 }
+
+.sign-in .content .input-field {
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+}
+.sign-in .content .input-field label {
+  font-weight: 900;
+  margin-bottom: 5px;
+  padding-top: 1rem;
+}
+.sign-in .content .input-field input {
+  border: 2px solid red;
+  max-width: 33rem;
+  width: 100%;
+  height: 3rem;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #D4D7E5;
+  padding-left: 20px;
+  font-weight: 500;
+  opacity: 0.7;
+}
+.sign-in .content .input-field span.error-message {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: red;
+  font-size: 0.8rem;
+  padding-top: 1rem;
+}
+.sign-in .content .checkbox input {
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid gray;
+  border-radius: 3px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transform: translateY(10%);
+  opacity: 0.6;
+=======
 .light-dark .changer::before {
   content: "";
   width: 10px;
@@ -2018,9 +2124,10 @@ a:hover {
     width: auto;
     font-weight: 700;
   }
+
 }
 
->>>>>>> 322bc2a489dc9531e24e0e093150e748fb5c567e
+ 322bc2a489dc9531e24e0e093150e748fb5c567e
 .content .container {
   padding-top: 5vh;
   padding-bottom: 5vh;
@@ -2037,10 +2144,18 @@ a:hover {
 .content .container .calender {
   display: none;
 }
+
+.sign-in .content .btn-theme-s {
+  height: 3rem;
+  font-weight: 600;
+  width: 33rem;
+  border: none;
+
 @media (min-width: 992px) {
   .content .container .calender {
     display: block;
   }
+
 }
 .content .container .content h2 {
   padding-bottom: 20px;
@@ -3550,7 +3665,7 @@ footer .container .social-media {
   display: flex;
   z-index: 0;
 }
-<<<<<<< HEAD
+
 .light-dark .light-dark .dark {
   background-color: #0B0F19;
   width: 50%;
@@ -5110,7 +5225,7 @@ footer .container .social-media {
 }
 .light-dark .light-dark .light {
   background-color: white;
->>>>>>> 322bc2a489dc9531e24e0e093150e748fb5c567e
+ 322bc2a489dc9531e24e0e093150e748fb5c567e
 }
 .light-dark .image {
   position: absolute;
