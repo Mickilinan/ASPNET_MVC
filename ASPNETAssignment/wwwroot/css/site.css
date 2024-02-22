@@ -451,12 +451,18 @@ footer .container .social-media {
   top: 20%;
   transform: translateX(-50%);
 }
-.sign-in .content .input-field p {
+.sign-in .content .input-field {
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+}
+.sign-in .content .input-field label {
   font-weight: 900;
   margin-bottom: 5px;
   padding-top: 1rem;
 }
 .sign-in .content .input-field input {
+  border: 2px solid red;
   max-width: 33rem;
   width: 100%;
   height: 3rem;
@@ -466,6 +472,14 @@ footer .container .social-media {
   padding-left: 20px;
   font-weight: 500;
   opacity: 0.7;
+}
+.sign-in .content .input-field span.error-message {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: red;
+  font-size: 0.8rem;
+  padding-top: 1rem;
 }
 .sign-in .content .checkbox input {
   width: 1rem;
@@ -488,11 +502,11 @@ footer .container .social-media {
 .sign-in .content .checkbox span {
   padding-left: 0.5rem;
 }
-.sign-in .content .btn-theme {
+.sign-in .content .btn-theme-s {
   height: 3rem;
   font-weight: 600;
   width: 33rem;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+  border: none;
 }
 .sign-in .content .forgot {
   color: #6366F1;
@@ -1037,12 +1051,18 @@ footer .container .social-media {
   top: 20%;
   transform: translateX(-50%);
 }
-.sign-in .content .input-field p {
+.sign-in .content .input-field {
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+}
+.sign-in .content .input-field label {
   font-weight: 900;
   margin-bottom: 5px;
   padding-top: 1rem;
 }
 .sign-in .content .input-field input {
+  border: 2px solid red;
   max-width: 33rem;
   width: 100%;
   height: 3rem;
@@ -1052,6 +1072,14 @@ footer .container .social-media {
   padding-left: 20px;
   font-weight: 500;
   opacity: 0.7;
+}
+.sign-in .content .input-field span.error-message {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: red;
+  font-size: 0.8rem;
+  padding-top: 1rem;
 }
 .sign-in .content .checkbox input {
   width: 1rem;
@@ -1074,11 +1102,11 @@ footer .container .social-media {
 .sign-in .content .checkbox span {
   padding-left: 0.5rem;
 }
-.sign-in .content .btn-theme {
+.sign-in .content .btn-theme-s {
   height: 3rem;
   font-weight: 600;
   width: 33rem;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+  border: none;
 }
 .sign-in .content .forgot {
   color: #6366F1;
@@ -1623,12 +1651,18 @@ footer .container .social-media {
   top: 20%;
   transform: translateX(-50%);
 }
-.sign-in .content .input-field p {
+.sign-in .content .input-field {
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+}
+.sign-in .content .input-field label {
   font-weight: 900;
   margin-bottom: 5px;
   padding-top: 1rem;
 }
 .sign-in .content .input-field input {
+  border: 2px solid red;
   max-width: 33rem;
   width: 100%;
   height: 3rem;
@@ -1638,6 +1672,14 @@ footer .container .social-media {
   padding-left: 20px;
   font-weight: 500;
   opacity: 0.7;
+}
+.sign-in .content .input-field span.error-message {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: red;
+  font-size: 0.8rem;
+  padding-top: 1rem;
 }
 .sign-in .content .checkbox input {
   width: 1rem;
@@ -1660,11 +1702,11 @@ footer .container .social-media {
 .sign-in .content .checkbox span {
   padding-left: 0.5rem;
 }
-.sign-in .content .btn-theme {
+.sign-in .content .btn-theme-s {
   height: 3rem;
   font-weight: 600;
   width: 33rem;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+  border: none;
 }
 .sign-in .content .forgot {
   color: #6366F1;
