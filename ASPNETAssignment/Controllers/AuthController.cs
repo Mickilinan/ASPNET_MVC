@@ -39,15 +39,18 @@ public class AuthController : Controller
     public IActionResult SignIn(SignInViewModel viewModel)
     {
        
-
-        if (!ModelState.IsValid)
-        {         
+        if (!ModelState.IsValid)              
             return View(viewModel);
-        }
+        
+
+        //var result = _authService.SignIn(viewModel.Form);
+        //if (result)
+        //    return RedirectToAction("Account", "Index");
+
 
         viewModel.ErrorMessage = "Incorrect email or password";  
         return View(viewModel);
 
-        return RedirectToAction("Account", "Index");
+       
     }
 }
