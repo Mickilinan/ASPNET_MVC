@@ -4,7 +4,7 @@ namespace ASPNETAssignment.Controllers
 {
     public class CoursesController : Controller
     {
-        public IActionResult CoursesIndex()
+        public IActionResult Index()
         {
             return View();
         }
