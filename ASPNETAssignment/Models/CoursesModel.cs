@@ -5,6 +5,6 @@ namespace ASPNETAssignment.Models
     public class CoursesModel
     {
 
-        public CoursesLinksViewModel CoursesLinks { get; set; } = new CoursesLinksViewModel();
+        //public CoursesLinksViewModel CoursesLinks { get; set; } = new CoursesLinksViewModel();
     }
 }
