@@ -1,4 +1,10 @@
-﻿@* Courses section *@
+﻿@using System.Globalization
+@model ASPNETAssignment.Models.CoursesModel
+
+
+@* Courses section *@
+
+
 
 <section class="courses-page">
 
@@ -36,123 +42,40 @@
 	@* Courses cards. *@
 	<div class="container">
 		<div class="courses-show">
+			@foreach (var course in Model.Courses)
+			{
 			<a class="courses" href="#">
-				<img src="~/images/coursesImages/laptop.svg" alt="two hands and a laptop">
-				<div class="bestbadge"> <img src="~/images/coursesImages/bestsellerbadge.svg" alt="Green bestseller badge"> </div>
-				<div class="bookmark"> <img src="~/images/coursesImages/bookmark.svg" alt="Bookmark course badge"></div>
-				<h5>Fullstack Web Developer Course from Scratch</h5>
-				<p class="author">By Robert Fox <p>
-
-				<p class="price">$12.50 </p>
-				<hr />
-				<p class="courses-time"><i class="fa-light fa-clock"></i>220 hours <i class="fa-light fa-thumbs-up"></i> 94% (4.2K)</p>
-			</a>
-
-
-			<a class="courses" href="#">
-				<img src="~/images/coursesImages/mandesk.svg" alt="man drinking coffee in front of laptop at desk">
-				<div class="bookmark"> <img src="~/images/coursesImages/bookmark.svg" alt="Bookmark course badge"></div>
-				<h5>HTML, CSS, JavaScript Web Developer</h5>
-				<p class="author">By Jenny Wilson & Marvin McKinney<p>
-
-				<p class="price">$15.99 </p>
-				<hr />
-				<p class="courses-time"><i class="fa-light fa-clock"></i>160 hours <i class="fa-light fa-thumbs-up"></i> 92% (3.1K)</p>
-			</a>
-
-			<a class="courses" href="#">
-				<img src="~/images/coursesImages/womanyellow.svg" alt="woman in a yellow sweater and headphones smiling in front of laptop">
-				<div class="bookmark"> <img src="~/images/coursesImages/bookmark.svg" alt="Bookmark course badge"></div>
-				<h5>The Complete Front-End Web Development Course</h5>
-				<p class="author">By Albert Flores<p>
-
-					<div class="price-container">
-						<p class="price-red">$9.99</p>
-						<p class="old-price"><del>$44.99</del></p>
-					</div>
+				<img src="@course.ImageUrl" alt="course image"/>
+					@if (!string.IsNullOrEmpty(course.BestBadgeUrl))
+					{
+						<div class="bestbadge"> <img src="@course.BestBadgeUrl" alt="Green bestseller badge"> </div>
+					}
+					<div class="bookmark"> <img src="@course.BookmarkUrl" alt="Bookmark course badge"></div>
+					<h5>@course.Title</h5>
+					<p class="author">@course.Author<p>
+						<div class="price-container">
+								@if (course.RedPrice.HasValue)
+								{
+								<p class="price-red">$@course.RedPrice.Value.ToString("F2",CultureInfo.InvariantCulture)</p>
+								}
+								@if (course.Price.HasValue)
+								{
+								<p class="price">$@course.Price.Value.ToString("F2",CultureInfo.InvariantCulture)</p>
+								}
+								@if (course.OldPrice.HasValue)
+								{
+								<p class="old-price"><del>$@course.OldPrice.Value.ToString("F2",CultureInfo.InvariantCulture)</del></p>
+								}
+						</div>
 					<hr />
-				<p class="courses-time"><i class="fa-light fa-clock"></i>100 hours <i class="fa-light fa-thumbs-up"></i> 98% (2.7K)</p>
-			</a>
-
-			<a class="courses" href="#">
-				<img src="~/images/coursesImages/womancurls.svg" alt="smiling woman with black curly hair and glasses">
-				<div class="bookmark"> <img src="~/images/coursesImages/bookmark.svg" alt="Bookmark course badge"></div>
-				<h5>iOS & Swift - The Complete iOS App Development Course</h5>
-				<p class="author">By Marvin McKinney<p>
-
-				<p class="price">$15.99</p>
-				<hr />
-				<p class="courses-time"><i class="fa-light fa-clock"></i>160 hours <i class="fa-light fa-thumbs-up"></i> 92% (3.1K)</p>
-			</a>
-
-			<a class="courses" href="#">
-				<img src="~/images/coursesImages/womanhand.svg" alt="smiling woman with headphones in front of laptop">
-				<div class="bestbadge"> <img src="~/images/coursesImages/bestsellerbadge.svg" alt="Green bestseller badge"> </div>
-				<div class="bookmark"> <img src="~/images/coursesImages/bookmark.svg" alt="Bookmark course badge"></div>
-
-				<h5>Data Science & Machine Learning with Python</h5>
-				<p class="author">By Esther Howard<p>
-
-				<p class="price">$11.20</p>
-				<hr />
-				<p class="courses-time"><i class="fa-light fa-clock"></i>160 hours <i class="fa-light fa-thumbs-up"></i> 92% (3.1K)</p>
-			</a>
-
-			<a class="courses" href="#">
-				<img src="~/images/coursesImages/womannote.svg" alt="happy woman with a notebook in her hand">
-				<div class="bookmark"> <img src="~/images/coursesImages/bookmark.svg" alt="Bookmark course badge"></div>
-
-				<h5>Creative CSS Drawing Course: Make Art With CSS</h5>
-				<p class="author">By Robert Fox<p>
-
-				<p class="price">$10.50</p>
-				<hr />
-				<p class="courses-time"><i class="fa-light fa-clock"></i>220 hours <i class="fa-light fa-thumbs-up"></i> 94% (4.2K)</p>
-			</a>
-
-			<a class="courses" href="#">
-				<img src="~/images/coursesImages/womandesk.svg" alt="woman sitting at desk with headphones and laptop">
-				<div class="bookmark"> <img src="~/images/coursesImages/bookmark.svg" alt="Bookmark course badge"></div>
-
-				<h5>Blender Character Creator v2.0 for Video Games Design</h5>
-				<p class="author">By Ralph Edwards<p>
-
-				<p class="price">$18.99</p>
-				<hr />
-				<p class="courses-time"><i class="fa-light fa-clock"></i>160 hours <i class="fa-light fa-thumbs-up"></i> 92% (3.1K)</p>
-			</a>
-
-			<a class="courses" href="#">
-				<img src="~/images/coursesImages/manheadphones.svg" alt="happy man with headphones">
-				<div class="bookmark"> <img src="~/images/coursesImages/bookmark.svg" alt="Bookmark course badge"></div>
-
-				<h5>The Ultimate Guide to 2D Mobile Game Development with Unity </h5>
-				<p class="author">By Albert Flores<p>
-
-					<div class="price-container">
-						<p class="price-red"> $12.99</p> <p class="old-price"><del>$44.99</del></p>
-					</div>
-					<hr />
-				<p class="courses-time"><i class="fa-light fa-clock"></i>100 hours <i class="fa-light fa-thumbs-up"></i> 98% (2.7K)</p>
-			</a>
-
-			<a class="courses" href="#">
-				<img src="~/images/coursesImages/manlaptop.svg" alt="happy woman with a notebook in her hand">
-				<div class="bookmark"> <img src="~/images/coursesImages/bookmark.svg" alt="Bookmark course badge"></div>
-
-				<h5>Learn JMETER from Scratch on Live Apps-Performance Testing</h5>
-				<p class="author">By Jenny Wilson<p>
-
-				<p class="price">$14.50</p>
-				<hr />
-				<p class="courses-time"><i class="fa-light fa-clock"></i>  160 hours  <i class="fa-light fa-thumbs-up"></i> 92% (3.1K)</p>
-			</a>
-
+					<p class="courses-time">
+						<i class="fa-light fa-clock"></i>@course.Hours hours <i class="fa-light fa-thumbs-up"></i> @course.RatingPercentage%  (@course.RatingCount) 
+					</p>
+				</a>
+			}
 		</div>
-		<div class="carousel"> <img src="~/images/coursesImages/pagination.svg" alt="carousel-img">  </div>
-	</div>
-
-
+			<div class="carousel"> <img src="~/images/coursesImages/pagination.svg" alt="carousel-img">  </div>
+	</div>		
 
 	<div class="banner">
 		<div class="container">
