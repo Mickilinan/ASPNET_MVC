@@ -19,3 +19,5 @@ const checkedValidator = (element) => {
 
     return false
 }
+
+//idk i like rats
