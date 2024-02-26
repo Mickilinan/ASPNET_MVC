@@ -1,4 +1,7 @@
-﻿.subscribe {
+﻿@import '../core/_media.scss';
+@import '../core/_colors.scss';
+
+.subscribe {
     background-color: $gray-100;
 
     .container {
@@ -83,44 +86,49 @@
                     flex-direction: row;
                 }
 
-                form {
-                    display: flex;
-                    width: 100%;
+                .input-group-span {
 
-                    input {
-                        width: 90%;
-                        border-radius: 10px;
-                        border: 1px solid;
-                        border-color: $gray-400;
-                        padding-left: 50px;
-                        font-weight: 500;
-                        opacity: 0.7;
-                    }
+                    .input-group {
+                        display: flex;
+                        width: 100%;
 
-                    i {
-                        font-weight: 300;
-                        font-size: 20px;
-                        position: relative;
-                        display: none;
-                        top: .9rem;
-                        left: -41rem;
-
-                        @include xxl {
-                            display: inline-block;
+                        #email.sign-up {
+                            max-width: 33rem;
+                            width: 100%;
+                            height: 3rem;
+                            border-radius: 10px;
+                            border: 1px solid;
+                            border-color: $gray-400;
+                            padding-left: 20px;
+                            font-weight: 500;
+                            opacity: 0.7;
                         }
-                    }
-                }
 
-                button {
-                    margin-top: 10px;
-                    height: 2rem;
-                    width: 80%;
-                    margin-left: 0;
+                        i {
+                            font-weight: 300;
+                            font-size: 20px;
+                            position: relative;
+                            display: none;
+                            top: .9rem;
+                            left: -41rem;
 
-                    @include md {
-                        height: 3rem;
-                        width: 20%;
-                        margin-top: none;
+                            @include xxl {
+                                display: inline-block;
+                            }
+                        }
+
+                        button {
+                            margin-top: 10px;
+                            height: 2rem;
+                            width: 80%;
+                            margin-left: 0;
+
+                            @include md {
+                                height: 3rem;
+                                width: 20%;
+                                margin-top: 0px;
+                            }
+                        }
                     }
                 }
             }
