@@ -193,7 +193,7 @@ a {
   transition: all 0.25s ease-in-out;
 }
 a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .menu-link {
@@ -1466,6 +1466,10 @@ footer .container .social-media {
   display: grid;
   grid-template-rows: auto 1fr auto;
   row-gap: 5px;
+  text-decoration: none;
+}
+.courses-page .container .courses-show .courses:hover {
+  text-decoration: none;
 }
 .courses-page .container .courses-show .courses .bestbadge {
   position: absolute;
@@ -1504,6 +1508,9 @@ footer .container .social-media {
   font-size: 20px !important;
   margin: 0;
   padding: 0 20px 0 20px;
+}
+.courses-page .container .courses-show .courses h5:hover {
+  text-decoration: underline;
 }
 .courses-page .container .courses-show .courses hr {
   border-color: #E2E5F1;
@@ -1793,7 +1800,7 @@ a {
   transition: all 0.25s ease-in-out;
 }
 a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .menu-link {
@@ -3066,6 +3073,10 @@ footer .container .social-media {
   display: grid;
   grid-template-rows: auto 1fr auto;
   row-gap: 5px;
+  text-decoration: none;
+}
+.courses-page .container .courses-show .courses:hover {
+  text-decoration: none;
 }
 .courses-page .container .courses-show .courses .bestbadge {
   position: absolute;
@@ -3104,6 +3115,9 @@ footer .container .social-media {
   font-size: 20px !important;
   margin: 0;
   padding: 0 20px 0 20px;
+}
+.courses-page .container .courses-show .courses h5:hover {
+  text-decoration: underline;
 }
 .courses-page .container .courses-show .courses hr {
   border-color: #E2E5F1;
@@ -3393,7 +3407,7 @@ a {
   transition: all 0.25s ease-in-out;
 }
 a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .menu-link {
@@ -4666,6 +4680,10 @@ footer .container .social-media {
   display: grid;
   grid-template-rows: auto 1fr auto;
   row-gap: 5px;
+  text-decoration: none;
+}
+.courses-page .container .courses-show .courses:hover {
+  text-decoration: none;
 }
 .courses-page .container .courses-show .courses .bestbadge {
   position: absolute;
@@ -4704,6 +4722,9 @@ footer .container .social-media {
   font-size: 20px !important;
   margin: 0;
   padding: 0 20px 0 20px;
+}
+.courses-page .container .courses-show .courses h5:hover {
+  text-decoration: underline;
 }
 .courses-page .container .courses-show .courses hr {
   border-color: #E2E5F1;
