@@ -1,4 +1,4 @@
-﻿using ASPNETAssignment.ViewModels;
+﻿
 
 namespace ASPNETAssignment.Models
 {
@@ -21,7 +21,7 @@ namespace ASPNETAssignment.Models
         }
              
 
-        public List<Course> Courses { get; set; } = new List<Course>();
+        public List<Course> Courses { get; set; } = [];
        
     }
 }
