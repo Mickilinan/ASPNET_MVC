@@ -1608,6 +1608,53 @@ footer .container .social-media {
   box-shadow: 0px 8px 18px -8px rgba(99, 102, 241, 0.9);
 }
 
+.contact-us {
+  background-color: #F3F6FF;
+}
+.contact-us .container .navigation {
+  padding: 30px 0;
+}
+.contact-us .container .navigation .menu-links {
+  line-height: 160%;
+  font-weight: 400;
+  color: #565973;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px !important;
+  color: #9397AD;
+  text-decoration: none;
+  transition: color 0.25s ease-in-out;
+}
+.contact-us .container .navigation .menu-links:hover, .contact-us .container .navigation .menu-links:active, .contact-us .container .navigation .menu-links:focus,
+.contact-us .container .navigation .menu-links .active {
+  color: #6366F1;
+  text-decoration: none;
+}
+.contact-us .container .navigation .menu-links i {
+  margin-right: 5px;
+}
+.contact-us .container .navigation .menu-links i.fa-sharp.fa-solid.fa-angles-right {
+  font-size: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.contact-us .container .contact-content .content-head {
+  font-weight: bolder;
+  font-size: 24px;
+}
+.contact-us .container .contact-content p {
+  font-size: 16px;
+  color: #565973;
+}
+.contact-us .container .contact-content button {
+  background-color: transparent;
+  font-weight: bold;
+  color: #6366F1;
+  border: none;
+}
+.contact-us .container .contact-content button i {
+  margin-left: 10px;
+}
+
 html, body {
   line-height: 160%;
   font-weight: 400;
@@ -3215,6 +3262,53 @@ footer .container .social-media {
   box-shadow: 0px 8px 18px -8px rgba(99, 102, 241, 0.9);
 }
 
+.contact-us {
+  background-color: #F3F6FF;
+}
+.contact-us .container .navigation {
+  padding: 30px 0;
+}
+.contact-us .container .navigation .menu-links {
+  line-height: 160%;
+  font-weight: 400;
+  color: #565973;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px !important;
+  color: #9397AD;
+  text-decoration: none;
+  transition: color 0.25s ease-in-out;
+}
+.contact-us .container .navigation .menu-links:hover, .contact-us .container .navigation .menu-links:active, .contact-us .container .navigation .menu-links:focus,
+.contact-us .container .navigation .menu-links .active {
+  color: #6366F1;
+  text-decoration: none;
+}
+.contact-us .container .navigation .menu-links i {
+  margin-right: 5px;
+}
+.contact-us .container .navigation .menu-links i.fa-sharp.fa-solid.fa-angles-right {
+  font-size: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.contact-us .container .contact-content .content-head {
+  font-weight: bolder;
+  font-size: 24px;
+}
+.contact-us .container .contact-content p {
+  font-size: 16px;
+  color: #565973;
+}
+.contact-us .container .contact-content button {
+  background-color: transparent;
+  font-weight: bold;
+  color: #6366F1;
+  border: none;
+}
+.contact-us .container .contact-content button i {
+  margin-left: 10px;
+}
+
 html, body {
   line-height: 160%;
   font-weight: 400;
@@ -4820,4 +4914,51 @@ footer .container .social-media {
 }
 .courses-page .banner .container button {
   box-shadow: 0px 8px 18px -8px rgba(99, 102, 241, 0.9);
+}
+
+.contact-us {
+  background-color: #F3F6FF;
+}
+.contact-us .container .navigation {
+  padding: 30px 0;
+}
+.contact-us .container .navigation .menu-links {
+  line-height: 160%;
+  font-weight: 400;
+  color: #565973;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px !important;
+  color: #9397AD;
+  text-decoration: none;
+  transition: color 0.25s ease-in-out;
+}
+.contact-us .container .navigation .menu-links:hover, .contact-us .container .navigation .menu-links:active, .contact-us .container .navigation .menu-links:focus,
+.contact-us .container .navigation .menu-links .active {
+  color: #6366F1;
+  text-decoration: none;
+}
+.contact-us .container .navigation .menu-links i {
+  margin-right: 5px;
+}
+.contact-us .container .navigation .menu-links i.fa-sharp.fa-solid.fa-angles-right {
+  font-size: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.contact-us .container .contact-content .content-head {
+  font-weight: bolder;
+  font-size: 24px;
+}
+.contact-us .container .contact-content p {
+  font-size: 16px;
+  color: #565973;
+}
+.contact-us .container .contact-content button {
+  background-color: transparent;
+  font-weight: bold;
+  color: #6366F1;
+  border: none;
+}
+.contact-us .container .contact-content button i {
+  margin-left: 10px;
 }

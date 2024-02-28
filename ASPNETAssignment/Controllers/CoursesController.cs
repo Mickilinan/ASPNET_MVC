@@ -7,8 +7,11 @@ namespace ASPNETAssignment.Controllers
     public class CoursesController : Controller
     {
         public IActionResult Index()
-        {
-            var viewModel = new CoursesViewModel();
+		{
+            
+			ViewData["Title"] = "Courses";
+		
+			var viewModel = new CoursesViewModel();
             return View(viewModel); 
            
         }
