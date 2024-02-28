@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using ASPNETAssignment.Models;
+using ASPNETAssignment.ViewModels;
+using Microsoft.AspNetCore.Mvc;
 
 namespace ASPNETAssignment.Controllers
 {
@@ -7,7 +9,14 @@ namespace ASPNETAssignment.Controllers
 		public IActionResult Index()
 		{
 			ViewData["Title"] = "Contact us";
-			return View();
+			var viewModel = new ContactViewModel
+
+			{
+				Contact = new ContactModel()
+			};
+
+			return View(viewModel);
+
 		}
 	}
 }
