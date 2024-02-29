@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using ASPNETAssignment.ViewModels;
+using Microsoft.AspNetCore.Mvc;
 
 namespace ASPNETAssignment.Controllers;
 
@@ -10,4 +11,11 @@ public class AccountController : Controller
     //{
     //    _accountService = accountService;
     //}
+
+    [Route("/")]
+    public IActionResult Details()
+    {
+        var viewModel = new AccountDetailsViewModel();
+        return View(viewModel); 
+    }
 }
