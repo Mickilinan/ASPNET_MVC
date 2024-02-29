@@ -1,5 +1,6 @@
 ﻿using static ASPNETAssignment.Models.CoursesModel;
 
+
 namespace ASPNETAssignment.ViewModels
 {
 	public class CoursesViewModel
@@ -111,3 +112,5 @@ namespace ASPNETAssignment.ViewModels
 		};
 	}
 }
+
+

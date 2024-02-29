@@ -1,6 +1,7 @@
 ﻿using ASPNETAssignment.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
+
 namespace ASPNETAssignment.Controllers
 {
     public class CoursesController : Controller
