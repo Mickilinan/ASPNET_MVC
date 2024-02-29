@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using ASPNETAssignment.ViewModels;
+using Microsoft.AspNetCore.Mvc;
 
 namespace ASPNETAssignment.Controllers;
 
@@ -6,8 +7,15 @@ public class HomeController : Controller
 {
     public IActionResult Index()
     {
-        return View();
+        var subscribeViewModel = new SubscribeViewModel
+        {
+          
+        };
+
+        return View(subscribeViewModel);
     }
+
+
 
 }
 
