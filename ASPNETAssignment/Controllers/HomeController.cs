@@ -7,18 +7,15 @@ public class HomeController : Controller
 {
     public IActionResult Index()
     {
-        var homeViewModel = new HomeViewModel
+        var subscribeViewModel = new SubscribeViewModel
         {
-            SubscribeViewModel = new SubscribeViewModel
-            {
-                
-            }
+          
         };
 
-        return View(homeViewModel);
+        return View(subscribeViewModel);
     }
 
-  
+
 
 }
 
