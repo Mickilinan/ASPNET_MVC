@@ -11,25 +11,31 @@
 					<a class="menu-links" asp-controller="Contact" asp-action="Index">Contact</a>
 				</div>
 				<h1>Contact Us</h1>
-			
+
 				<div class="contact-content">
 					<div class="content-item">
 						<img src="~/Images/contactImages/emailus.svg" />
-						<p class="content-head">Email us</p>
-						<p>Please feel free to drop us a line. We will respond as soon as possible.</p>
+						<div class="contact-text">
+							<p class="content-head">Email us</p>
+							<p>Please feel free to drop us a line. We will respond as soon as possible.</p>
+							<button>Leave a message <i class="fa-sharp fa-solid fa-arrow-right"></i> </button>
+						</div>
 					</div>
-					<button>Leave a message <i class="fa-sharp fa-solid fa-arrow-right"></i> </button>
+
 					<div class="content-item">
 						<img src="~/Images/contactImages/careersicon.svg" />
-						<p class="content-head">Careers</p>
-						<p>Sit ac ipsum leo lorem magna nunc mattis maecenas non vestibulum.</p>
+						<div class="contact-text">
+							<p class="content-head">Careers</p>
+							<p>Sit ac ipsum leo lorem magna nunc mattis maecenas non vestibulum.</p>
+
+							<button>Send an application <i class="fa-sharp fa-solid fa-arrow-right"></i> </button>
+						</div>
 					</div>
-					<button>Send an application <i class="fa-sharp fa-solid fa-arrow-right"></i> </button>
 				</div>
 			</div>
 
 			<div class="contact-form-container">
-				
+
 				<form class="contact-form" method="post" novalidate>
 					<div class="@((@Model.StatusMessage == "Success - Form submitted") ? "form-success" : ((Model.StatusMessage == "Error - Form not submitted") ? "form-error" : ""))">
 						@Model.StatusMessage
@@ -66,9 +72,9 @@
 				</form>
 			</div>
 		</div>
-		<img src="~/images/contactImages/Map.svg" alt="map with location" />
-	</div>
 		
+	</div>
 
+	<img class="map" src="~/images/contactImages/Map.svg" alt="map with location" />
 
 </section>
