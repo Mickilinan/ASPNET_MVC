@@ -1231,7 +1231,7 @@ footer .container .social-media {
     display: block;
   }
 }
-.subscribe .container .grid {
+.subscribe .container form .grid {
   display: grid;
   justify-content: center;
   padding-left: 15%;
@@ -1240,15 +1240,15 @@ footer .container .social-media {
   grid-template-areas: "sign-up" "signup-check1" "signup-check2" "signup-check3" "signup-check4" "signup-check5" "signup-check6";
 }
 @media (min-width: 768px) {
-  .subscribe .container .grid {
+  .subscribe .container form .grid {
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "sign-up signup-check1 signup-check2 signup-check3";
   }
 }
-.subscribe .container .grid .sign-up {
+.subscribe .container form .grid .sign-up {
   grid-area: sign-up;
 }
-.subscribe .container .grid .checkbox input {
+.subscribe .container form .grid .checkbox input {
   width: 1rem;
   height: 1rem;
   border: 2px solid gray;
@@ -1256,22 +1256,22 @@ footer .container .social-media {
   transform: translateY(10%);
   opacity: 0.6;
 }
-.subscribe .container .grid .checkbox input:checked {
+.subscribe .container form .grid .checkbox input:checked {
   color: #6366F1;
 }
-.subscribe .container .grid .checkbox span {
+.subscribe .container form .grid .checkbox span {
   padding-left: 0.5rem;
 }
-.subscribe .container .grid .signup-check1 {
+.subscribe .container form .grid .signup-check1 {
   grid-area: signup-check1;
 }
-.subscribe .container .grid .signup-check2 {
+.subscribe .container form .grid .signup-check2 {
   grid-area: signup-check2;
 }
-.subscribe .container .grid .signup-check3 {
+.subscribe .container form .grid .signup-check3 {
   grid-area: signup-check3;
 }
-.subscribe .container .subscribe-form {
+.subscribe .container form .subscribe-form {
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -1280,24 +1280,26 @@ footer .container .social-media {
   padding-right: 15%;
 }
 @media (min-width: 768px) {
-  .subscribe .container .subscribe-form {
+  .subscribe .container form .subscribe-form {
     flex-direction: row;
   }
 }
-.subscribe .container .subscribe-form form {
+.subscribe .container form .subscribe-form .input-group-span .input-group {
   display: flex;
   width: 100%;
 }
-.subscribe .container .subscribe-form form input {
-  width: 90%;
+.subscribe .container form .subscribe-form .input-group-span .input-group #email.sign-up {
+  max-width: 33rem;
+  width: 100%;
+  height: 3rem;
   border-radius: 10px;
   border: 1px solid;
   border-color: #D4D7E5;
-  padding-left: 50px;
+  padding-left: 20px;
   font-weight: 500;
   opacity: 0.7;
 }
-.subscribe .container .subscribe-form form i {
+.subscribe .container form .subscribe-form .input-group-span .input-group i {
   font-weight: 300;
   font-size: 20px;
   position: relative;
@@ -1306,24 +1308,24 @@ footer .container .social-media {
   left: -41rem;
 }
 @media (min-width: 1400px) {
-  .subscribe .container .subscribe-form form i {
+  .subscribe .container form .subscribe-form .input-group-span .input-group i {
     display: inline-block;
   }
 }
-.subscribe .container .subscribe-form button {
+.subscribe .container form .subscribe-form .input-group-span .input-group button {
   margin-top: 10px;
   height: 2rem;
   width: 80%;
   margin-left: 0;
 }
 @media (min-width: 768px) {
-  .subscribe .container .subscribe-form button {
+  .subscribe .container form .subscribe-form .input-group-span .input-group button {
     height: 3rem;
     width: 20%;
-    margin-top: none;
+    margin-top: 0px;
   }
 }
-.subscribe .container .terms {
+.subscribe .container form .terms {
   padding-left: 15%;
   margin-top: 5px;
 }
@@ -2885,7 +2887,7 @@ footer .container .social-media {
     display: block;
   }
 }
-.subscribe .container .grid {
+.subscribe .container form .grid {
   display: grid;
   justify-content: center;
   padding-left: 15%;
@@ -2894,15 +2896,15 @@ footer .container .social-media {
   grid-template-areas: "sign-up" "signup-check1" "signup-check2" "signup-check3" "signup-check4" "signup-check5" "signup-check6";
 }
 @media (min-width: 768px) {
-  .subscribe .container .grid {
+  .subscribe .container form .grid {
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "sign-up signup-check1 signup-check2 signup-check3";
   }
 }
-.subscribe .container .grid .sign-up {
+.subscribe .container form .grid .sign-up {
   grid-area: sign-up;
 }
-.subscribe .container .grid .checkbox input {
+.subscribe .container form .grid .checkbox input {
   width: 1rem;
   height: 1rem;
   border: 2px solid gray;
@@ -2910,22 +2912,22 @@ footer .container .social-media {
   transform: translateY(10%);
   opacity: 0.6;
 }
-.subscribe .container .grid .checkbox input:checked {
+.subscribe .container form .grid .checkbox input:checked {
   color: #6366F1;
 }
-.subscribe .container .grid .checkbox span {
+.subscribe .container form .grid .checkbox span {
   padding-left: 0.5rem;
 }
-.subscribe .container .grid .signup-check1 {
+.subscribe .container form .grid .signup-check1 {
   grid-area: signup-check1;
 }
-.subscribe .container .grid .signup-check2 {
+.subscribe .container form .grid .signup-check2 {
   grid-area: signup-check2;
 }
-.subscribe .container .grid .signup-check3 {
+.subscribe .container form .grid .signup-check3 {
   grid-area: signup-check3;
 }
-.subscribe .container .subscribe-form {
+.subscribe .container form .subscribe-form {
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -2934,24 +2936,26 @@ footer .container .social-media {
   padding-right: 15%;
 }
 @media (min-width: 768px) {
-  .subscribe .container .subscribe-form {
+  .subscribe .container form .subscribe-form {
     flex-direction: row;
   }
 }
-.subscribe .container .subscribe-form form {
+.subscribe .container form .subscribe-form .input-group-span .input-group {
   display: flex;
   width: 100%;
 }
-.subscribe .container .subscribe-form form input {
-  width: 90%;
+.subscribe .container form .subscribe-form .input-group-span .input-group #email.sign-up {
+  max-width: 33rem;
+  width: 100%;
+  height: 3rem;
   border-radius: 10px;
   border: 1px solid;
   border-color: #D4D7E5;
-  padding-left: 50px;
+  padding-left: 20px;
   font-weight: 500;
   opacity: 0.7;
 }
-.subscribe .container .subscribe-form form i {
+.subscribe .container form .subscribe-form .input-group-span .input-group i {
   font-weight: 300;
   font-size: 20px;
   position: relative;
@@ -2960,24 +2964,24 @@ footer .container .social-media {
   left: -41rem;
 }
 @media (min-width: 1400px) {
-  .subscribe .container .subscribe-form form i {
+  .subscribe .container form .subscribe-form .input-group-span .input-group i {
     display: inline-block;
   }
 }
-.subscribe .container .subscribe-form button {
+.subscribe .container form .subscribe-form .input-group-span .input-group button {
   margin-top: 10px;
   height: 2rem;
   width: 80%;
   margin-left: 0;
 }
 @media (min-width: 768px) {
-  .subscribe .container .subscribe-form button {
+  .subscribe .container form .subscribe-form .input-group-span .input-group button {
     height: 3rem;
     width: 20%;
-    margin-top: none;
+    margin-top: 0px;
   }
 }
-.subscribe .container .terms {
+.subscribe .container form .terms {
   padding-left: 15%;
   margin-top: 5px;
 }
@@ -3124,6 +3128,22 @@ footer .container .social-media {
 }
 .courses-page .container .courses-show .courses:hover {
   text-decoration: none;
+}
+.courses-page .container .courses-show .courses .bestbadge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+}
+.courses-page .container .courses-show .courses .bookmark {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  background-size: cover;
 }
 .courses-page .container .courses-show .courses .bestbadge {
   position: absolute;
@@ -3307,6 +3327,7 @@ footer .container .social-media {
 }
 .contact-us .container .contact-content button i {
   margin-left: 10px;
+
 }
 
 html, body {
@@ -4539,7 +4560,7 @@ footer .container .social-media {
     display: block;
   }
 }
-.subscribe .container .grid {
+.subscribe .container form .grid {
   display: grid;
   justify-content: center;
   padding-left: 15%;
@@ -4548,15 +4569,15 @@ footer .container .social-media {
   grid-template-areas: "sign-up" "signup-check1" "signup-check2" "signup-check3" "signup-check4" "signup-check5" "signup-check6";
 }
 @media (min-width: 768px) {
-  .subscribe .container .grid {
+  .subscribe .container form .grid {
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: "sign-up signup-check1 signup-check2 signup-check3";
   }
 }
-.subscribe .container .grid .sign-up {
+.subscribe .container form .grid .sign-up {
   grid-area: sign-up;
 }
-.subscribe .container .grid .checkbox input {
+.subscribe .container form .grid .checkbox input {
   width: 1rem;
   height: 1rem;
   border: 2px solid gray;
@@ -4564,22 +4585,22 @@ footer .container .social-media {
   transform: translateY(10%);
   opacity: 0.6;
 }
-.subscribe .container .grid .checkbox input:checked {
+.subscribe .container form .grid .checkbox input:checked {
   color: #6366F1;
 }
-.subscribe .container .grid .checkbox span {
+.subscribe .container form .grid .checkbox span {
   padding-left: 0.5rem;
 }
-.subscribe .container .grid .signup-check1 {
+.subscribe .container form .grid .signup-check1 {
   grid-area: signup-check1;
 }
-.subscribe .container .grid .signup-check2 {
+.subscribe .container form .grid .signup-check2 {
   grid-area: signup-check2;
 }
-.subscribe .container .grid .signup-check3 {
+.subscribe .container form .grid .signup-check3 {
   grid-area: signup-check3;
 }
-.subscribe .container .subscribe-form {
+.subscribe .container form .subscribe-form {
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -4588,24 +4609,26 @@ footer .container .social-media {
   padding-right: 15%;
 }
 @media (min-width: 768px) {
-  .subscribe .container .subscribe-form {
+  .subscribe .container form .subscribe-form {
     flex-direction: row;
   }
 }
-.subscribe .container .subscribe-form form {
+.subscribe .container form .subscribe-form .input-group-span .input-group {
   display: flex;
   width: 100%;
 }
-.subscribe .container .subscribe-form form input {
-  width: 90%;
+.subscribe .container form .subscribe-form .input-group-span .input-group #email.sign-up {
+  max-width: 33rem;
+  width: 100%;
+  height: 3rem;
   border-radius: 10px;
   border: 1px solid;
   border-color: #D4D7E5;
-  padding-left: 50px;
+  padding-left: 20px;
   font-weight: 500;
   opacity: 0.7;
 }
-.subscribe .container .subscribe-form form i {
+.subscribe .container form .subscribe-form .input-group-span .input-group i {
   font-weight: 300;
   font-size: 20px;
   position: relative;
@@ -4614,24 +4637,24 @@ footer .container .social-media {
   left: -41rem;
 }
 @media (min-width: 1400px) {
-  .subscribe .container .subscribe-form form i {
+  .subscribe .container form .subscribe-form .input-group-span .input-group i {
     display: inline-block;
   }
 }
-.subscribe .container .subscribe-form button {
+.subscribe .container form .subscribe-form .input-group-span .input-group button {
   margin-top: 10px;
   height: 2rem;
   width: 80%;
   margin-left: 0;
 }
 @media (min-width: 768px) {
-  .subscribe .container .subscribe-form button {
+  .subscribe .container form .subscribe-form .input-group-span .input-group button {
     height: 3rem;
     width: 20%;
-    margin-top: none;
+    margin-top: 0px;
   }
 }
-.subscribe .container .terms {
+.subscribe .container form .terms {
   padding-left: 15%;
   margin-top: 5px;
 }

@@ -1,16 +1,25 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using ASPNETAssignment.ViewModels;
+using Microsoft.AspNetCore.Mvc;
 
 namespace ASPNETAssignment.Controllers;
 
 public class SubscribeController : Controller
 {
+    [Route("subscribe")]
+    [HttpGet]
     public IActionResult Subscribe()
     {
-        return View();
+        var viewModel = new SubscribeViewModel();
+        return View("~/Views/Shared/Sections/_Subscribe.cshtml", viewModel);
     }
 
-    public IActionResult UnSubscribe()
+    [Route("subscribe")]
+    [HttpPost]
+    public IActionResult Subscribe(SubscribeViewModel viewModel)
     {
-        return View();
+        if (ModelState.IsValid)
+            return RedirectToAction("Success");
+        return View("~/Views/Shared/Sections/_Subscribe.cshtml", viewModel);
     }
+   
 }
