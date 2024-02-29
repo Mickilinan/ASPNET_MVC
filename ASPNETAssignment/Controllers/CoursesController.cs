@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using ASPNETAssignment.ViewModels;
+using Microsoft.AspNetCore.Mvc;
 
 namespace ASPNETAssignment.Controllers
 {

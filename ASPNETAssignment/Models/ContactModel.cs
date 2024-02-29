@@ -1,4 +1,6 @@
-﻿namespace ASPNETAssignment.Models;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace ASPNETAssignment.Models;
 
 public class ContactModel
 {
