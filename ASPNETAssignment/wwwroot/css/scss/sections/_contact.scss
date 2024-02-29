@@ -1,0 +1,59 @@
+.contact-us {
+    background-color: $gray-100;
+
+    .container {
+        .navigation {
+            padding: 30px 0;
+
+            .menu-links {
+                @include text-s;
+                color: $gray-600;
+                text-decoration: none;
+                transition: color 0.25s ease-in-out;
+
+                &:hover,
+                &:active,
+                &:focus,
+                .active {
+                    color: $theme;
+                    text-decoration: none;
+                }
+
+                i {
+                    margin-right: 5px;
+                }
+
+                i.fa-sharp.fa-solid.fa-angles-right {
+                    font-size: 10px;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                }
+            }
+        }
+
+        .contact-content {
+
+            .content-head{
+                font-weight: bolder;
+                font-size: 24px;
+            }
+            p{
+                font-size: 16px;
+                color: $gray-700;
+            }
+
+            button{
+                background-color:transparent;
+                font-weight: bold;
+                color: $theme;
+                border:none;
+
+                i {
+
+                    margin-left: 10px;
+
+                }
+            }
+        }
+    }
+}
