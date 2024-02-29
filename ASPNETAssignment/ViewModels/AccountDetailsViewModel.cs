@@ -8,7 +8,7 @@ namespace ASPNETAssignment.ViewModels
 
         public AccountDetailsBasicInfoModel BasicInfo { get; set; } = new AccountDetailsBasicInfoModel()
         {
-            ProfileImage = "~/Images/contactDetailsImages/profile_image.svg",
+            ProfileImage = "images/contactDetailsImages/profile_image.svg",
             FirstName = "Sarah",
             LastName = "Kriborg",
             Email = "sarah.kriborg@domain.com"

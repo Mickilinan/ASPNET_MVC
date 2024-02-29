@@ -12,7 +12,7 @@ public class AccountController : Controller
     //    _accountService = accountService;
     //}
 
-    [Route("/")]
+    [Route("/account")]
     public IActionResult Details()
     {
         var viewModel = new AccountDetailsViewModel();
