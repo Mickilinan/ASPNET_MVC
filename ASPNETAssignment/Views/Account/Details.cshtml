@@ -1,0 +1,15 @@
+﻿@model AccountDetailsViewModel
+@{
+    ViewData["Title"] = $"Account Details for {Model.BasicInfo.FirstName} {Model.BasicInfo.LastName}";
+}
+
+<div class="container">
+    <section id="account-details">
+        <aside>
+            <div class="profile-info">
+                <img src="@Model.BasicInfo.ProfileImage" alt="${Model.BasicInfo.FirstName} {Model.BasicInfo.LastName}" />
+            </div>
+
+        </aside>
+    </section>
+</div>
