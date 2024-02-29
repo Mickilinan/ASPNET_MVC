@@ -523,6 +523,10 @@ header .container .btn-mobile {
   }
 }
 
+.contact-header {
+  background: #F3F6FF;
+}
+
 footer {
   padding: 50px 0 30px 0;
   line-height: 160%;
@@ -2466,6 +2470,10 @@ header .container .btn-mobile {
   }
 }
 
+.contact-header {
+  background: #F3F6FF;
+}
+
 footer {
   padding: 50px 0 30px 0;
   line-height: 160%;
@@ -4407,6 +4415,10 @@ header .container .btn-mobile {
   header .container .btn-mobile {
     display: none;
   }
+}
+
+.contact-header {
+  background: #F3F6FF;
 }
 
 footer {
