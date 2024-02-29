@@ -1,4 +1,8 @@
-﻿<header>
+﻿﻿@{
+    var isContactPage = (ViewContext.RouteData.Values["Controller"].ToString() == "Contact" && ViewContext.RouteData.Values["Action"].ToString() == "Index");
+}
+
+<header class="@(isContactPage ? "contact-header" : "")">
     <div class="container">
         <a id="logo" asp-controller="Home" asp-action="Index"><img src="/images/siliconLogo.svg" alt="logotype for Silicon"></a>
         <div id="menu" class="hide">
