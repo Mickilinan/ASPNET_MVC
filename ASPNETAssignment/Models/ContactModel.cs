@@ -4,7 +4,7 @@ namespace ASPNETAssignment.Models;
 
 public class ContactModel
 {
-    public string? StatusMessage { get; set; } = "";
+    public string StatusMessage { get; set; } = "";
 
     [Display(Name = "Full name", Prompt = "Enter your full name", Order = 0)]
     [DataType(DataType.Text)]
@@ -17,7 +17,7 @@ public class ContactModel
     [Required(ErrorMessage = "Email address is required")]
     [RegularExpression(@"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$", ErrorMessage = "Invalid email address")]
 
-    public string EmailAddress { get; set; }
+    public string EmailAddress { get; set; } = null!;
 
     [Display(Name = "Service (optional)", Prompt = "Choose the service you are interested in", Order = 2)]
     [DataType(DataType.Text)]
