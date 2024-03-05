@@ -13,6 +13,8 @@ namespace ASPNETAssignment.ViewModels
             LastName = "Kriborg",
             Email = "sarah.kriborg@domain.com"
         };
+
+        public bool DeleteAccount { get; set; } = false;
     }
 
 }

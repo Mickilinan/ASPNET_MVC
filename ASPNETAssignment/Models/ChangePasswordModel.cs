@@ -33,6 +33,6 @@ public class ChangePasswordModel
 
     [Display(Name = "Confirm Password", Prompt = "Confirm your new password", Order = 2)]
     [DataType(DataType.Password)]
-    [Required(ErrorMessage = "Confirmation of new password is required")]
+    [Required(ErrorMessage = "Confirmation is required")]
     public string ConfirmPassword { get; set; } = null!;
 }
