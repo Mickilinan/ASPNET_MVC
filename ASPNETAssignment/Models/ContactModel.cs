@@ -4,7 +4,7 @@ namespace ASPNETAssignment.Models;
 
 public class ContactModel
 {
-    public string? StatusMessage { get; set; } = "";
+    //public string? StatusMessage { get; set; } = "";
 
     [Display(Name = "Full name", Prompt = "Enter your full name", Order = 0)]
     [DataType(DataType.Text)]
