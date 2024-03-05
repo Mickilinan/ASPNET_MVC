@@ -231,7 +231,7 @@ a:hover {
 }
 
 .btn-transparent {
-  border-radius: 6px !important;
+  border-radius: 6px;
   text-align: center;
   font-size: 14px;
   padding: 8px 28px;
@@ -250,7 +250,7 @@ a:hover {
 }
 
 .btn-theme-s {
-  border-radius: 6px !important;
+  border-radius: 6px;
   text-align: center;
   font-size: 14px;
   padding: 8px 28px;
@@ -272,7 +272,7 @@ a:hover {
 }
 
 .btn-gray {
-  border-radius: 6px !important;
+  border-radius: 6px;
   text-align: center;
   font-size: 14px;
   padding: 8px 28px;
@@ -361,7 +361,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 8px !important;
+  border-radius: 8px;
   width: 44px;
   height: 44px;
   background-color: #EFF2FC;
@@ -560,7 +560,7 @@ footer .container .social-media {
   max-width: 33rem;
   width: 100%;
   height: 3rem;
-  border-radius: 10px !important;
+  border-radius: 10px;
   border: 1px solid;
   border-color: #D4D7E5;
   padding-left: 20px;
@@ -636,7 +636,7 @@ footer .container .social-media {
   max-width: 33rem;
   width: 100%;
   height: 3rem;
-  border-radius: 10px !important;
+  border-radius: 10px;
   border: 1px solid;
   border-color: #D4D7E5;
   padding-left: 20px;
@@ -1392,7 +1392,7 @@ footer .container .social-media {
   max-width: 33rem;
   width: 100%;
   height: 3rem;
-  border-radius: 10px !important;
+  border-radius: 10px;
   border: 1px solid;
   border-color: #D4D7E5;
   padding-left: 20px;
@@ -1868,4 +1868,120 @@ footer .container .social-media {
   margin: 20px 0;
   display: flex;
   gap: 20px;
+}
+
+.container .account-details {
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  gap: 150px;
+  margin-bottom: 70px;
+}
+.container .account-details aside {
+  border-right: 1px solid #E2E5F1;
+  padding-right: 20px;
+}
+.container .account-details aside .profile-info {
+  margin: 20px;
+  text-align: center;
+}
+.container .account-details aside .profile-info h5 {
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+.container .account-details aside .profile-info p {
+  line-height: 160%;
+  font-weight: 400;
+  color: #565973;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px !important;
+}
+.container .account-details aside nav {
+  margin-top: 20px;
+  text-align: left;
+}
+.container .account-details aside nav a {
+  margin: 10px 0;
+  text-align: left;
+  justify-content: flex-start;
+}
+.container .account-details aside nav .btn-theme-s {
+  text-align: left;
+  justify-content: flex-start;
+}
+.container .account-details .security {
+  margin-top: 50px;
+  width: 100%;
+}
+.container .account-details .security .change-password form {
+  padding: 1rem;
+}
+.container .account-details .security .change-password form h5 {
+  color: #6366F1;
+}
+.container .account-details .security .change-password form .content {
+  display: grid;
+  gap: 1rem 2rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "currentpassword currentpassword" "newpassword confirmpassword" "buttons buttons";
+}
+.container .account-details .security .change-password form .content #form-currentpassword {
+  grid-area: currentpassword;
+}
+.container .account-details .security .change-password form .content #form-newpassword {
+  grid-area: newpassword;
+}
+.container .account-details .security .change-password form .content #form-confirmpassword {
+  grid-area: confirmpassword;
+}
+.container .account-details .security .change-password form .content .form-buttons {
+  grid-area: buttons;
+  margin: 20px 0;
+  display: flex;
+  gap: 20px;
+}
+.container .account-details .security .delete-account {
+  margin-top: 30px;
+}
+.container .account-details .security .delete-account form {
+  padding: 1rem;
+}
+.container .account-details .security .delete-account form h5 {
+  color: #6366F1;
+}
+.container .account-details .security .delete-account form .content p {
+  line-height: 160%;
+  font-weight: 400;
+  color: #565973;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px !important;
+}
+.container .account-details .security .delete-account form .content .checkbox {
+  padding: 10px 10px 10px 0;
+  color: #565973 !important;
+  line-height: 160%;
+  font-weight: 400;
+  color: #565973;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px !important;
+}
+.container .account-details .security .delete-account form .content .checkbox input {
+  line-height: 160%;
+  font-weight: 400;
+  color: #565973;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px !important;
+  margin-right: 10px;
+}
+.container .account-details .security .delete-account form .content .form-buttons {
+  grid-area: buttons;
+  margin: 20px 0;
+  display: flex;
+  gap: 20px;
+}
+.container .account-details .security .delete-account form .content .form-buttons .btn-gray {
+  background-color: #EF4444;
+  color: #FFFFFF;
+}
+.container .account-details .security .delete-account form .content .form-buttons .btn-gray:hover {
+  background-color: #565973;
 }
