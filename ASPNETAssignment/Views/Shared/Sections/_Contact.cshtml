@@ -1,4 +1,4 @@
-﻿@model ASPNETAssignment.ViewModels.ContactViewModel
+﻿@model ContactViewModel
 
 
 <section class="contact-us">
@@ -6,30 +6,30 @@
 	<div class="container">
 		<div class="contact-layout">
 			<div class="contact-info">
-		<div class="navigation">
-			<a class="menu-links" asp-controller="Home" asp-action="Index"> <i class="fa-regular fa-house">  </i> Home  <i class="fa-sharp fa-solid fa-angles-right"></i></a>
-			<a class="menu-links" asp-controller="Contact" asp-action="Index">Contact</a>
-		</div>
-		<h1>Contact Us</h1>
+				<div class="navigation">
+					<a class="menu-links" asp-controller="Home" asp-action="Index"> <i class="fa-regular fa-house">  </i> Home  <i class="fa-sharp fa-solid fa-angles-right"></i></a>
+					<a class="menu-links" asp-controller="Contact" asp-action="Index">Contact</a>
+				</div>
+				<h1>Contact Us</h1>
 
-	<div class="contact-content">
+				<div class="contact-content">
 					<div class="content-item">
 						<img src="~/Images/contactImages/emailus.svg" />
 						<div class="contact-text">
-		<p class="content-head">Email us</p>
-		<p>Please feel free to drop us a line. We will respond as soon as possible.</p>
-			<button>Leave a message <i class="fa-sharp fa-solid fa-arrow-right"></i> </button>
+							<p class="content-head">Email us</p>
+							<p>Please feel free to drop us a line. We will respond as soon as possible.</p>
+							<button>Leave a message <i class="fa-sharp fa-solid fa-arrow-right"></i> </button>
 						</div>
 					</div>
 
 					<div class="content-item">
 						<img src="~/Images/contactImages/careersicon.svg" />
 						<div class="contact-text">
-			<p class="content-head">Careers</p>
-			<p>Sit ac ipsum leo lorem magna nunc mattis maecenas non vestibulum.</p>
+							<p class="content-head">Careers</p>
+							<p>Sit ac ipsum leo lorem magna nunc mattis maecenas non vestibulum.</p>
 
-			<button>Send an application <i class="fa-sharp fa-solid fa-arrow-right"></i> </button>
-	</div>
+							<button>Send an application <i class="fa-sharp fa-solid fa-arrow-right"></i> </button>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -37,40 +37,38 @@
 			<div class="contact-form-container">
 
 				<form class="contact-form" method="post" asp-controller="Contact" asp-action="Index" novalidate>
-			<div class="@((@Model.StatusMessage == "Success - Form submitted") ? "form-success" : ((Model.StatusMessage == "Error - Form not submitted") ? "form-error" : ""))">
-				@Model.StatusMessage
-			</div>
-			<h2>Get In Contact With Us</h2>
 
-			<div class="input-group">
-						<label asp-for="Contact.FullName"></label>
-						<span asp-validation-for="Contact.FullName"></span>
-						<input asp-for="Contact.FullName" />
+					<h2>Get In Contact With Us</h2>
+
+					<div class="input-group">
+						<label asp-for="FullName"></label>
+						<span asp-validation-for="FullName"></span>
+						<input asp-for="FullName" />
 					</div>
 
 					<div class="input-group">
-						<label asp-for="Contact.EmailAddress"></label>
-						<span asp-validation-for="Contact.EmailAddress"></span>
-						<input asp-for="Contact.EmailAddress" />
-			</div>
+						<label asp-for="EmailAddress"></label>
+						<span asp-validation-for="EmailAddress"></span>
+						<input asp-for="EmailAddress" />
+					</div>
 
-			<div class="input-group">
-						<label asp-for="Contact.Services"></label>
-						<select asp-for="Contact.Services">
-					<option disabled selected style="display: none;">Choose the service you are interested in</option>
+					<div class="input-group">
+						<label asp-for="Services"></label>
+						<select asp-for="Services">
+							<option disabled selected style="display: none;">Choose the service you are interested in</option>
 							<option value="Consulting">"Consulting"</option>
-				</select>
-			</div>
+						</select>
+					</div>
 
-			<div class="input-group">
-						<label asp-for="Contact.Message"></label>
-						<span asp-validation-for="Contact.Message"></span>
-						<textarea asp-for="Contact.Message" rows="4"></textarea>
-			</div>
+					<div class="input-group">
+						<label asp-for="Message"></label>
+						<span asp-validation-for="Message"></span>
+						<textarea asp-for="Message" rows="4"></textarea>
+					</div>
 
-			<button type="submit" class="btn-theme">Send Contact Request</button>
+					<button type="submit" class="btn-theme-s">Send Contact Request</button>
 
-	</form>
+				</form>
 			</div>
 		</div>
 
