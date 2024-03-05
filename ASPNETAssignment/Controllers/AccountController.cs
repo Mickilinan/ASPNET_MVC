@@ -26,14 +26,14 @@ public class AccountController : Controller
     public IActionResult Security(SecurityViewModel viewModel)
     {
         //_securityService.ChangePassword(viewModel.Password);
-        return View (viewModel);
+        return View(viewModel);
     }
 
 
     [Route("/mycourses")]
     public IActionResult SavedCourses(SavedCoursesViewModel viewModel)
     {
-        return View (viewModel);
+        return View(viewModel);
     }
 
     [Route("/index")]
@@ -54,6 +54,13 @@ public class AccountController : Controller
     {
         //_accountService.SaveAddressInfo(viewModel.AddressInfo);
         return RedirectToAction(nameof(Details), viewModel);
+    }
+
+    [HttpPost]
+    public IActionResult AccountInfo(SavedCoursesViewModel viewModel)
+    {
+        //_accountService.SaveAccountInfo(viewModel.AccountInfo);
+        return RedirectToAction(nameof(SavedCourses), viewModel);
     }
 
 
