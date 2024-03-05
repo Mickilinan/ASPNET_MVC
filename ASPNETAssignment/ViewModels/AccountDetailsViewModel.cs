@@ -9,9 +9,9 @@ namespace ASPNETAssignment.ViewModels
         public AccountDetailsBasicInfoModel BasicInfo { get; set; } = new AccountDetailsBasicInfoModel()
         {
             ProfileImage = "images/contactDetailsImages/profile_image.svg",
-            FirstName = "Sarah",
-            LastName = "Kriborg",
-            Email = "sarah.kriborg@domain.com"
+            FirstName = "Micaela",
+            LastName = "Nilsson",
+            Email = "micaela.nilsson@domain.com"
         };
 
         public AccountDetailsAddressInfoModel AddressInfo { get; set; } = new AccountDetailsAddressInfoModel();
