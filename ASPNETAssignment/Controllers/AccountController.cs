@@ -36,19 +36,32 @@ public class AccountController : Controller
         return View (viewModel);
     }
 
+    //[HttpGet]
+    //public IActionResult BasicInfo()
+    //{
 
-    [HttpPost]
-    public IActionResult BasicInfo(AccountDetailsViewModel viewModel)
-    {
-        //_accountService.SaveBasicInfo(viewModel.BasicInfo);
-        return RedirectToAction(nameof(Details), viewModel);
-    }
+    //    return View();
+    //}
 
-    [HttpPost]
-    public IActionResult AddressInfo(AccountDetailsViewModel viewModel)
-    {
-        //_accountService.SaveAddressInfo(viewModel.AddressInfo);
-        return RedirectToAction(nameof(Details), viewModel);
-    }
+    //[HttpPost]
+    //public IActionResult BasicInfo(AccountDetailsViewModel viewModel)
+    //{
+    //    //_accountService.SaveBasicInfo(viewModel.BasicInfo);
+    //    return RedirectToAction(nameof(Details), viewModel);
+    //}
+
+    //[HttpGet]
+
+    //public IActionResult AddressInfo()
+    //{
+    //    return View();
+    //}
+
+    //[HttpPost]
+    //public IActionResult AddressInfo(AccountDetailsViewModel viewModel)
+    //{
+    //    //_accountService.SaveAddressInfo(viewModel.AddressInfo);
+    //    return RedirectToAction(nameof(Details), viewModel);
+    //}
 
 }
