@@ -1964,7 +1964,7 @@ footer .container .social-media {
   font-family: "Manrope", sans-serif;
   font-size: 16px !important;
 }
-.container .account-details .security .delete-account form .content .checkbox input {
+.container .account-details .security .delete-account form .content .checkbox input[type=checkbox] {
   line-height: 160%;
   font-weight: 400;
   color: #565973;
