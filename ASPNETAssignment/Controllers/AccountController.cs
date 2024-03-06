@@ -36,11 +36,6 @@ public class AccountController : Controller
         return View (viewModel);
     }
 
-    [Route("/signup")]
-    public IActionResult SignOut(SignUpViewModel viewModel)
-    {
-        return View(viewModel);
-    }
 
     [HttpPost]
     public IActionResult BasicInfo(AccountDetailsViewModel viewModel)
