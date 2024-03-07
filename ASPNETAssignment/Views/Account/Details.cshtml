@@ -28,31 +28,31 @@
                     <div id="form-firstname" class="input-group">
                         <label asp-for=BasicInfo.FirstName></label>
                         <span asp-validation-for="BasicInfo.FirstName"></span>
-                        <input asp-for="BasicInfo.FirstName" />
+                        <input type="text" asp-for="BasicInfo.FirstName" />
                     </div>
 
                     <div id="form-lastname" class="input-group">
                         <label asp-for=BasicInfo.LastName></label>
                         <span asp-validation-for="BasicInfo.LastName"></span>
-                        <input asp-for="BasicInfo.LastName" />
+                        <input type="text" asp-for="BasicInfo.LastName" />
                     </div>
 
                     <div id="form-email" class="input-group">
                         <label asp-for=BasicInfo.Email></label>
                         <span asp-validation-for="BasicInfo.Email"></span>
-                        <input asp-for="BasicInfo.Email" />
+                        <input type="email" asp-for="BasicInfo.Email" />
                     </div>
 
                     <div id="form-phone" class="input-group">
                         <label asp-for=BasicInfo.Phone></label>
                         <span asp-validation-for="BasicInfo.Phone"></span>
-                        <input asp-for="BasicInfo.Phone"/>
+                        <input type="tel" asp-for="BasicInfo.Phone" />
                     </div>
 
                     <div id="form-bio" class="input-group">
                         <label asp-for=BasicInfo.Biography>Bio <span>(optional)</span></label>
                         <span asp-validation-for="BasicInfo.Biography"></span>
-                        <textarea asp-for="BasicInfo.Biography"></textarea>
+                        <textarea  asp-for="BasicInfo.Biography"></textarea>
                     </div>
 
                     <div class="form-buttons">
