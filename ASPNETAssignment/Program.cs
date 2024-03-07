@@ -13,6 +13,7 @@ var app = builder.Build();
 
 
 app.UseHsts();
+app.UseStatusCodePagesWithReExecute("/error", "?statusCode={0}");
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
