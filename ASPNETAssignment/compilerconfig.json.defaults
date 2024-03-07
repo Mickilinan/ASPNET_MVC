@@ -16,7 +16,7 @@
     "sass": {
       "autoPrefix": "",
       "loadPaths": "",
-      "style": "compressed",
+      "style": "expanded",
       "relativeUrls": true,
       "sourceMap": false
     },
@@ -58,7 +58,7 @@
   },
   "minifiers": {
     "css": {
-      "enabled": false,
+      "enabled": false, //Change this to "true" when project is done
       "termSemicolons": true,
       "gzip": false
     },
