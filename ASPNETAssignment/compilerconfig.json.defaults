@@ -16,7 +16,7 @@
     "sass": {
       "autoPrefix": "",
       "loadPaths": "",
-      "style": "expanded",
+      "style": "compressed",
       "relativeUrls": true,
       "sourceMap": false
     },
