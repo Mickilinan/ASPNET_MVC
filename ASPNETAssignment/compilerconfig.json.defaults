@@ -58,7 +58,7 @@
   },
   "minifiers": {
     "css": {
-      "enabled": true,
+      "enabled": false, //Change this to "true" when project is done
       "termSemicolons": true,
       "gzip": false
     },
