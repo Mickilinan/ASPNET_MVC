@@ -13,7 +13,7 @@ public class SignUpModel
     [Required(ErrorMessage = "Last name is required")]
     public string LastName { get; set; } = null!;
 
-    
+
     [Display(Name = "Email", Prompt = "Enter your email address", Order = 2)]
     [DataType(DataType.EmailAddress)]
     [Required(ErrorMessage = "Email is required")]
@@ -41,4 +41,3 @@ public class SignUpModel
     public bool TermsAndConditions { get; set; } = false;
 
 }
-
