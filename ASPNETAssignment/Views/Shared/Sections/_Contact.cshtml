@@ -1,4 +1,4 @@
-﻿@model ASPNETAssignment.ViewModels.ContactViewModel
+﻿@model ContactViewModel
 
 <section class="contact-us">
 
@@ -35,43 +35,42 @@
 
 			<div class="contact-form-container">
 
-				<form class="contact-form" method="post" novalidate>
-					<div class="@((@Model.StatusMessage == "Success - Form submitted") ? "form-success" : ((Model.StatusMessage == "Error - Form not submitted") ? "form-error" : ""))">
-						@Model.StatusMessage
-					</div>
+				<form class="contact-form" method="post" asp-controller="Contact" asp-action="Index" novalidate>
+
 					<h2>Get In Contact With Us</h2>
 
 					<div class="input-group">
-						<label asp-for="Contact.FullName"></label>
-						<span asp-validation-for="Contact.FullName"></span>
-						<input asp-for="Contact.FullName" />
+						<label asp-for="FullName"></label>
+						<span asp-validation-for="FullName"></span>
+						<input asp-for="FullName" />
 					</div>
 
 					<div class="input-group">
-						<label asp-for="Contact.EmailAddress"></label>
-						<span asp-validation-for="Contact.EmailAddress"></span>
-						<input asp-for="Contact.EmailAddress" />
+						<label asp-for="EmailAddress"></label>
+						<span asp-validation-for="EmailAddress"></span>
+						<input asp-for="EmailAddress" />
 					</div>
 
 					<div class="input-group">
-						<label asp-for="Contact.Services"></label>
-						<select asp-for="Contact.Services">
+						<label asp-for="Services"></label>
+						<select asp-for="Services">
 							<option disabled selected style="display: none;">Choose the service you are interested in</option>
 							<option value="Consulting">"Consulting"</option>
 						</select>
 					</div>
 
 					<div class="input-group">
-						<label asp-for="Contact.Message"></label>
-						<span asp-validation-for="Contact.Message"></span>
-						<textarea asp-for="Contact.Message" rows="4"></textarea>
+						<label asp-for="Message"></label>
+						<span asp-validation-for="Message"></span>
+						<textarea asp-for="Message" rows="5"></textarea>
 					</div>
 
 					<button type="submit" class="btn-theme">Send Contact Request</button>
+
 				</form>
 			</div>
 		</div>
-		
+
 	</div>
 
 	<img class="map" src="~/images/contactImages/Map.svg" alt="map with location" />
