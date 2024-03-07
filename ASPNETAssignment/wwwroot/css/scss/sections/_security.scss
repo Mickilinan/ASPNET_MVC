@@ -103,7 +103,7 @@
                             color: $gray-700 !important;
                             @include text-m;
 
-                            input {
+                            input[type=checkbox] {
                                 @include text-lg;
                                 margin-right: 10px;
                             }

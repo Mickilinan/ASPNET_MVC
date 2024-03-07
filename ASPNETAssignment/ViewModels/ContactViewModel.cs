@@ -1,14 +1,36 @@
-﻿using ASPNETAssignment.Models;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace ASPNETAssignment.ViewModels;
 
 public class ContactViewModel
 {
-	public ContactModel Contact { get; set; }
-	public List<string> Services { get; set; }
-	public string StatusMessage { get; set; }
-	public string FullName { get; set; }	
-	public string EmailAddress { get; set; }
-	public string? Service { get; set; }
-	public string Message { get; set; }
+	
+
+	[Display(Name = "Full name", Prompt = "Enter your full name", Order = 0)]
+	[DataType(DataType.Text)]
+	[Required(ErrorMessage = "Full name is required")]
+
+	public string FullName { get; set; } = null!;
+
+
+	[Display(Name = "Email address", Prompt = "Enter your email address", Order = 1)]
+	[DataType(DataType.EmailAddress)]
+	[Required(ErrorMessage = "Email address is required")]
+	[RegularExpression(@"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$", ErrorMessage = "Invalid email address")]
+
+	public string EmailAddress { get; set; } = null!;
+
+
+	[Display(Name = "Service (optional)", Prompt = "Choose the service you are interested in", Order = 2)]
+	[DataType(DataType.Text)]
+	public string? Services { get; set; }
+
+
+	[Display(Name = "Message", Prompt = "Enter your message here...", Order = 3)]
+	[DataType(DataType.MultilineText)]
+	[Required(ErrorMessage = "Message is required")]
+	public string Message { get; set; } = null!;
+
+
+
 }
