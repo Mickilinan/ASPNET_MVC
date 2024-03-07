@@ -12,6 +12,7 @@ public class AccountController : Controller
     //    _accountService = accountService;
     //}
 
+    [HttpGet]
     [Route("/account")]
     public IActionResult Details()
     {
@@ -36,32 +37,51 @@ public class AccountController : Controller
         return View (viewModel);
     }
 
-    //[HttpGet]
-    //public IActionResult BasicInfo()
-    //{
 
-    //    return View();
-    //}
 
-    //[HttpPost]
-    //public IActionResult BasicInfo(AccountDetailsViewModel viewModel)
-    //{
-    //    //_accountService.SaveBasicInfo(viewModel.BasicInfo);
-    //    return RedirectToAction(nameof(Details), viewModel);
-    //}
+    [HttpPost]
+    public IActionResult BasicInfo(AccountDetailsViewModel viewModel)
+    {
+        if (!ModelState.IsValid)
+        {
+            return View("Details", viewModel);
+        }
+        //_accountService.SaveBasicInfo(viewModel.BasicInfo);
+        return RedirectToAction(nameof(Details), viewModel);
+    }
 
-    //[HttpGet]
 
-    //public IActionResult AddressInfo()
-    //{
-    //    return View();
-    //}
+    [HttpPost]
+    public IActionResult AddressInfo(AccountDetailsViewModel viewModel)
+    {
+        if (!ModelState.IsValid)
+        {
+            return View("Details", viewModel);
+        }
+        //_accountService.SaveAddressInfo(viewModel.AddressInfo);
+        return RedirectToAction(nameof(Details), viewModel);
+    }
 
-    //[HttpPost]
-    //public IActionResult AddressInfo(AccountDetailsViewModel viewModel)
-    //{
-    //    //_accountService.SaveAddressInfo(viewModel.AddressInfo);
-    //    return RedirectToAction(nameof(Details), viewModel);
-    //}
+    [HttpPost]
+    public IActionResult Password(SecurityViewModel viewModel)
+    {
+        if (!ModelState.IsValid)
+        {
+            return View("Security", viewModel);
+        }
+        //_accountService.SavePassword(viewModel.AddressInfo);
+        return RedirectToAction(nameof(Security), viewModel);
+    }
+
+    [HttpPost]
+    public IActionResult DeleteAccount(SecurityViewModel viewModel)
+    {
+        if (!ModelState.IsValid)
+        {
+            return View("Security", viewModel);
+        }
+        //_accountService.SavePassword(viewModel.AddressInfo);
+        return RedirectToAction(nameof(Security), viewModel);
+    }
 
 }

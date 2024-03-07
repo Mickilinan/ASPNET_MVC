@@ -14,7 +14,6 @@ namespace ASPNETAssignment.ViewModels
             Email = "sarah.kriborg@domain.com"
         };
 
-        //[RequiredCheckbox(ErrorMessage = "Your must agree to delete account to continue.")]
         public bool DeleteAccount { get; set; } = false;
     }
 

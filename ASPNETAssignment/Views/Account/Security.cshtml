@@ -61,10 +61,11 @@
                         <div class="checkbox">
                             <input asp-for="DeleteAccount" type="checkbox" />
                             <label asp-for="DeleteAccount">Yes, I want to delete my account.</label>
+                            <span asp-validation-for="DeleteAccount"></span>
                         </div>
 
                         <div class="form-buttons">
-                            <button class="btn-gray" type="reset">Delete</button>
+                            <button class="btn-gray" type="submit">Delete</button>
                         </div>
                     </div>
 
