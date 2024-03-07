@@ -8,9 +8,11 @@ namespace ASPNETAssignment.Controllers
 		public IActionResult Index()
 		{
 			ViewData["Title"] = "Contact us";
+			
 			var viewModel = new ContactViewModel();
-			return View(viewModel);
+			return View(viewModel);		
 			
 		}
-	}
+
+    }
 }
