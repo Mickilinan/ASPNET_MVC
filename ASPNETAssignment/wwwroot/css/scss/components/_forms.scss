@@ -1,5 +1,5 @@
 ﻿form {
-    width:100%;
+    width: 100%;
     display: grid;
 
     .input-group {
@@ -8,7 +8,7 @@
 
     .checkbox {
         span {
-            display: block; 
+            display: block;
 
             &.field-validation-error {
                 position: static;
@@ -19,6 +19,7 @@
             }
         }
     }
+
     .checkbox-group {
         display: flex;
         justify-content: flex-start;
@@ -44,7 +45,7 @@
 
     input {
         padding: 1rem;
-        border-radius: 0.5rem;
+        border-radius: 0.5rem !important;
         border: 0.063rem solid $gray-400;
 
         &::placeholder {
