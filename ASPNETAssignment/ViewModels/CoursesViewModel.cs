@@ -1,4 +1,6 @@
-﻿using static ASPNETAssignment.Models.CoursesModel;
+﻿
+using static ASPNETAssignment.Models.CoursesModel;
+
 
 
 namespace ASPNETAssignment.ViewModels
