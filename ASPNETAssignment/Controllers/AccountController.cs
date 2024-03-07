@@ -13,6 +13,7 @@ public class AccountController : Controller
     //}
 
     [Route("/account")]
+    [HttpGet]
     public IActionResult Details()
     {
         var viewModel = new AccountDetailsViewModel();
@@ -36,32 +37,27 @@ public class AccountController : Controller
         return View (viewModel);
     }
 
-    //[HttpGet]
-    //public IActionResult BasicInfo()
-    //{
 
-    //    return View();
-    //}
+    [HttpPost]
+    public IActionResult BasicInfo(AccountDetailsViewModel viewModel)
+    {
+        if (!ModelState.IsValid)
+        {
+            return RedirectToAction(nameof(Details), viewModel);
+        }
+        //_accountService.SaveBasicInfo(viewModel.BasicInfo);
+        return View(viewModel);
+    }
 
-    //[HttpPost]
-    //public IActionResult BasicInfo(AccountDetailsViewModel viewModel)
-    //{
-    //    //_accountService.SaveBasicInfo(viewModel.BasicInfo);
-    //    return RedirectToAction(nameof(Details), viewModel);
-    //}
-
-    //[HttpGet]
-
-    //public IActionResult AddressInfo()
-    //{
-    //    return View();
-    //}
-
-    //[HttpPost]
-    //public IActionResult AddressInfo(AccountDetailsViewModel viewModel)
-    //{
-    //    //_accountService.SaveAddressInfo(viewModel.AddressInfo);
-    //    return RedirectToAction(nameof(Details), viewModel);
-    //}
+    [HttpPost]
+    public IActionResult AddressInfo(AccountDetailsViewModel viewModel)
+    {
+        if (!ModelState.IsValid)
+        {
+            return RedirectToAction(nameof(Details), viewModel);
+        }
+        //_accountService.SaveAddressInfo(viewModel.AddressInfo);
+        return View(viewModel);
+    }
 
 }
